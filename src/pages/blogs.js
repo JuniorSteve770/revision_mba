@@ -57,9 +57,8 @@ const questions = {
             ],
             answer: "Gérer sa trésorerie à court terme",
             explanation: "Les banques utilisent les repos principalement pour la gestion de liquidité."
-        }
-    ],
-    moyen: [
+        },
+
         {
             question: "Comment calcule-t-on le montant total à rembourser dans un repo ?",
             options: [
@@ -158,7 +157,9 @@ const questions = {
             ],
             answer: "Il est collatéralisé, réduisant ainsi le risque de défaut",
             explanation: "Le repo est sécurisé par des titres, ce qui réduit le risque de défaut."
-        },
+        }
+    ],
+    moyen: [
         {
             question: "Quel est l'objectif d'un repo ouvert (open repo) ?",
             options: [
@@ -279,9 +280,8 @@ const questions = {
             ],
             answer: "Il n'a pas de date d'échéance fixe et peut être prolongé indéfiniment.",
             explanation: "Un repo ouvert permet aux parties de reconduire l'accord tant qu'elles le souhaitent."
-        }
-    ],
-    avance: [
+        },
+
         {
             question: "Un repo de 5 millions d'euros est conclu pour 14 jours avec un taux repo de 1,5 %. Quel est le montant total à rembourser ?",
             options: [
@@ -304,6 +304,7 @@ const questions = {
             answer: "15 045 000,00 €",
             explanation: "Montant total = 15 000 000 × (1 + 0,018 × 60 / 360) = 15 045 000,00 €."
         },
+
         {
             question: "Quelle formule permet de calculer les intérêts dans un repo ?",
             options: [
@@ -314,7 +315,307 @@ const questions = {
             ],
             answer: "Montant emprunté × Taux repo × (Jours / 360)",
             explanation: "Cette formule calcule les intérêts en fonction du montant emprunté, du taux repo et de la durée."
+        },
+        {
+            question: "Qu'est-ce qu'une opération de repo (repurchase agreement) ?",
+            options: [
+                "Une vente définitive d'obligations",
+                "Une opération de financement court-terme avec engagement de rachat",
+                "Un prêt sans garantie",
+                "Une transaction d'actions sur le marché secondaire"
+            ],
+            answer: "Une opération de financement court-terme avec engagement de rachat",
+            explanation: "Le repo est une opération de financement à court terme où les titres sont vendus avec engagement de rachat."
+        },
+        {
+            question: "Que représente le repo rate dans une transaction de repo ?",
+            options: [
+                "Le rendement du bond sous-jacent",
+                "Le taux d'intérêt appliqué au prêt garanti",
+                "La différence entre le prix sale et le prix propre",
+                "Le taux d'inflation du marché"
+            ],
+            answer: "Le taux d'intérêt appliqué au prêt garanti",
+            explanation: "Le repo rate est le taux d'intérêt appliqué dans une transaction repo."
+        },
+        {
+            question: "Quelle est la formule correcte pour calculer le Term Money ?",
+            options: [
+                "Nominal × (Settlement Price / 100)",
+                "Nominal × (Market Price / 100)",
+                "Nominal × (Clean Price / 100)",
+                "Nominal × (Repo Rate / 100)"
+            ],
+            answer: "Nominal × (Settlement Price / 100)",
+            explanation: "Le Term Money est calculé à partir du prix de règlement et du nominal du titre."
+        },
+        {
+            question: "Comment calcule-t-on les intérêts du repo (repo interest) ?",
+            options: [
+                "Term Money × (Repo Rate / 100) × (Days / 365)",
+                "Term Money × (Repo Rate / 100) × (Days / 360)",
+                "Settlement Price × Face Value × (Repo Rate / 100) × (Days / 360)",
+                "Face Value × (Repo Rate / 100) × (Days / 360)"
+            ],
+            answer: "Term Money × (Repo Rate / 100) × (Days / 360)",
+            explanation: "Les intérêts du repo sont calculés en fonction du Term Money, du repo rate et de la durée du repo en jours."
+        },
+        {
+            question: "Quelle formule est utilisée pour calculer le Wired Amount ?",
+            options: [
+                "Term Money + Repo Interest",
+                "Term Money - Repo Interest",
+                "Settlement Price × Nominal",
+                "Repo Interest × (360 / Days)"
+            ],
+            answer: "Term Money + Repo Interest",
+            explanation: "Le Wired Amount est la somme du Term Money et des intérêts du repo."
+        },
+        {
+            question: "Si le Face Amount est de 50M EUR, le Settlement Price est de 102.50, et l'Accrued Interest au settlement est de 1.25, quel est le Term Money ?",
+            options: [
+                "50,000,000 EUR",
+                "51,250,000 EUR",
+                "51,875,000 EUR",
+                "52,000,000 EUR"
+            ],
+            answer: "51,875,000 EUR",
+            explanation: "Le Term Money est calculé avec la formule : (50,000,000 × 102.5 / 100) + (50,000,000 × 1.25 / 100) = 51,875,000 EUR."
+        },
+        {
+            question: "Un trader fait un repo sur 40 jours avec un Term Money de 75,000,000 EUR et un Repo Rate de 4.75%. Quel est le Repo Interest ?",
+            options: [
+                "375,000 EUR",
+                "395,833 EUR",
+                "400,000 EUR",
+                "412,500 EUR"
+            ],
+            answer: "395,833 EUR",
+            explanation: "Le Repo Interest est calculé avec la formule : 75,000,000 × (4.75 / 100) × (40 / 360) = 395,833 EUR."
         }
+    ],
+    avance: [
+        {
+            question: "Un trader doit rembourser un Wired Amount de 120,500,000 EUR après un repo de 60 jours, avec un Repo Interest de 500,000 EUR. Quel était le Term Money ?",
+            options: [
+                "119,000,000 EUR",
+                "120,000,000 EUR",
+                "120,250,000 EUR",
+                "120,500,000 EUR"
+            ],
+            answer: "120,000,000 EUR",
+            explanation: "Le Term Money est calculé comme suit : 120,500,000 - 500,000 = 120,000,000 EUR."
+        },
+        {
+            question: "Quel est l’objectif du ratio LCR ?",
+            options: [
+                "Garantir un financement stable à long terme.",
+                "Assurer que les banques disposent de suffisamment d’actifs liquides pour couvrir les sorties nettes de trésorerie sur 30 jours.",
+                "Réduire les besoins en collatéral dans les opérations de repo.",
+                "Optimiser le rendement du portefeuille obligataire."
+            ],
+            answer: "Assurer que les banques disposent de suffisamment d’actifs liquides pour couvrir les sorties nettes de trésorerie sur 30 jours.",
+            explanation: "Le LCR garantit que les banques maintiennent des actifs liquides pour gérer leurs besoins de trésorerie."
+        },
+        {
+            question: "Si une banque a un LCR inférieur à 100%, que peut-elle faire pour l’améliorer ?",
+            options: [
+                "Réduire le volume de ses prêts.",
+                "Convertir des actifs illiquides en actifs de haute qualité liquides (HQLA).",
+                "Augmenter son exposition au marché des actions.",
+                "Accroître ses dettes court terme."
+            ],
+            answer: "Convertir des actifs illiquides en actifs de haute qualité liquides (HQLA).",
+            explanation: "Les banques peuvent améliorer leur LCR en augmentant leurs actifs liquides de haute qualité."
+        },
+        {
+            question: "Quelle est la différence principale entre LCR et NSFR ?",
+            options: [
+                "LCR est un ratio de court terme et NSFR un ratio de long terme.",
+                "LCR est basé sur les actifs, NSFR sur les passifs.",
+                "LCR est calculé sur 90 jours tandis que NSFR est sur 1 an.",
+                "Il n’y a aucune différence."
+            ],
+            answer: "LCR est un ratio de court terme et NSFR un ratio de long terme.",
+            explanation: "Le LCR se concentre sur la liquidité à court terme (30 jours), tandis que le NSFR vise à garantir un financement stable à long terme."
+        },
+        {
+            question: "Dans une opération de repo tripartite, qui gère le collatéral ?",
+            options: [
+                "L’acheteur.",
+                "L’agent tripartite (ex: LCH, Eurex).",
+                "Le prêteur.",
+                "La banque centrale."
+            ],
+            answer: "L’agent tripartite (ex: LCH, Eurex).",
+            explanation: "L’agent tripartite gère le collatéral pour les deux parties, réduisant les risques opérationnels."
+        },
+        {
+            question: "Quelle est la fonction d’un haircut appliqué sur un collatéral en repo ?",
+            options: [
+                "Assurer un rendement minimum sur la transaction.",
+                "Protéger contre le risque de défaut de l’emprunteur.",
+                "Réduire les besoins en liquidité du prêteur.",
+                "Optimiser le levier financier de la transaction."
+            ],
+            answer: "Protéger contre le risque de défaut de l’emprunteur.",
+            explanation: "Le haircut réduit la valeur du collatéral pour couvrir les risques de marché et de crédit."
+        },
+        {
+            question: "Quelle est la principale raison pour laquelle une banque effectue un repo ?",
+            options: [
+                "Acheter des titres en vue d’une prise de position long terme.",
+                "Obtenir du financement en utilisant ses titres comme collatéral.",
+                "Éviter les obligations réglementaires liées au NSFR.",
+                "Profiter d’un arbitrage fiscal."
+            ],
+            answer: "Obtenir du financement en utilisant ses titres comme collatéral.",
+            explanation: "Les repos permettent aux banques de lever des fonds à court terme en utilisant leurs titres comme garantie."
+        },
+        {
+            question: "Quel contrat juridique encadre le securities lending ?",
+            options: [
+                "GMRA (Global Master Repo Agreement).",
+                "OSLA / GMSLA (Global Master Securities Lending Agreement).",
+                "Basel III Framework.",
+                "Dodd-Frank Act."
+            ],
+            answer: "OSLA / GMSLA (Global Master Securities Lending Agreement).",
+            explanation: "Le GMSLA est le contrat standard pour les opérations de prêt de titres."
+        },
+        {
+            question: "Dans une opération de securities lending, qui est typiquement le prêteur ?",
+            options: [
+                "Un hedge fund.",
+                "Une banque d’investissement.",
+                "Un fonds de pension.",
+                "Un market maker."
+            ],
+            answer: "Un fonds de pension.",
+            explanation: "Les fonds de pension sont souvent prêteurs de titres en raison de leurs portefeuilles stables et de long terme."
+        },
+        {
+            question: "Un LCR structurellement élevé permet à une banque de :",
+            options: [
+                "Financer des actifs moins liquides sans impact sur le ratio.",
+                "Augmenter son levier financier sans restriction.",
+                "Pratiquer du repo avec du collatéral de moindre qualité à un coût plus faible.",
+                "Effectuer des transactions de repo sur des maturités plus longues."
+            ],
+            answer: "Financer des actifs moins liquides sans impact sur le ratio.",
+            explanation: "Un LCR élevé signifie que la banque dispose d’actifs liquides suffisants, lui permettant de financer des actifs moins liquides sans nuire à son ratio de liquidité."
+        },
+        {
+            question: "Pourquoi une banque avec un LCR bas devra-t-elle payer un premium plus élevé sur ses opérations de repo ?",
+            options: [
+                "Parce qu’elle est perçue comme plus risquée et doit offrir un collatéral de meilleure qualité.",
+                "Parce que les banques centrales imposent des pénalités aux établissements avec un faible LCR.",
+                "Parce qu’elle ne peut pas utiliser de collatéral pour ses opérations de repo.",
+                "Parce qu’elle doit lever plus de capital sur les marchés obligataires."
+            ],
+            answer: "Parce qu’elle est perçue comme plus risquée et doit offrir un collatéral de meilleure qualité.",
+            explanation: "Une banque avec un faible LCR devra fournir du collatéral de haute qualité (HQLA) ou payer un coût de financement plus élevé, car les prêteurs perçoivent un risque plus important."
+        },
+        {
+            question: "Quelle action impactera directement à la baisse le NSFR d’une banque ?",
+            options: [
+                "Une augmentation du volume de financements stables.",
+                "Une substitution de financements à court terme par des financements à long terme.",
+                "Une croissance rapide des actifs pondérés en risque financés par des dettes à court terme.",
+                "Une réduction des actifs pondérés en risque."
+            ],
+            answer: "Une croissance rapide des actifs pondérés en risque financés par des dettes à court terme.",
+            explanation: "Le NSFR mesure la stabilité du financement bancaire sur un horizon d’un an. Un financement court terme accru face à des actifs illiquides dégradera ce ratio."
+        },
+        {
+            question: "Lors d'une crise de liquidité, quelle stratégie peut permettre à une banque de respecter son LCR ?",
+            options: [
+                "Effectuer des ventes d’actifs non liquides pour lever du cash.",
+                "Augmenter son exposition aux produits dérivés.",
+                "Accroître son levier en empruntant à court terme.",
+                "Remplacer ses actifs HQLA par des titres à haut rendement."
+            ],
+            answer: "Effectuer des ventes d’actifs non liquides pour lever du cash.",
+            xplanation: "Vendre des actifs non liquides pour acquérir des actifs HQLA permet d’augmenter le numérateur du ratio LCR et de respecter les exigences réglementaires."
+        },
+        {
+            question: "Comment un haircut affecte-t-il le financement d’une transaction repo ?",
+            options: [
+                "Il diminue la valeur de financement accordée par rapport à la valeur nominale du collatéral.",
+                "Il augmente la valeur de financement du collatéral.",
+                "Il n’a d’impact que sur la qualité du collatéral et non sur le financement.",
+                "Il réduit l’exposition au risque de contrepartie pour l’emprunteur."
+            ],
+            answer: "Il diminue la valeur de financement accordée par rapport à la valeur nominale du collatéral.",
+            explanation: "Un haircut réduit la valeur du financement accordé par rapport à la valeur de marché du collatéral afin de couvrir le risque de baisse de prix du titre sous-jacent."
+        },
+        {
+            question: "Une contrepartie effectue un repo avec un haircut de 5% sur un nominal de 50M€. Quel montant recevra-t-elle en cash ?",
+            options: [
+                "52,500,000 €",
+                "47,500,000 €",
+                "50,000,000 €",
+                "49,000,000 €"
+            ],
+            answer: "47,500,000 €",
+            explanation: "Montant financé = Nominal × (1 - Haircut) = 50,000,000 × (1 - 0.05) = 47,500,000 €."
+        },
+        {
+            question: "Lors d’une transaction repo tripartite, quel est l’avantage principal de l’agent tripartite ?",
+            options: [
+                "Il garantit que la transaction est exécutée au meilleur prix du marché.",
+                "Il fournit une compensation en cas de défaut de l’une des parties.",
+                "Il gère et optimise la gestion du collatéral, réduisant ainsi les coûts administratifs pour les parties.",
+                "Il impose des exigences réglementaires plus strictes aux participants."
+            ],
+            answer: "Il gère et optimise la gestion du collatéral, réduisant ainsi les coûts administratifs pour les parties.",
+            explanation: "L’agent tripartite gère le collatéral et permet aux contreparties de bénéficier d’une administration simplifiée et d’une réduction des coûts opérationnels."
+        },
+        {
+            question: "Quelle est la principale différence entre une opération de repo et un prêt de titres (securities lending) ?",
+            options: [
+                "Dans un repo, il y a un engagement de rachat du collatéral, ce qui n’est pas le cas dans un prêt de titres.",
+                "Le repo ne nécessite pas de collatéral, contrairement au lending.",
+                "Les repos sont uniquement réglementés par les banques centrales.",
+                "Un repo ne peut être exécuté qu’entre banques commerciales."
+            ],
+            answer: "Dans un repo, il y a un engagement de rachat du collatéral, ce qui n’est pas le cas dans un prêt de titres.",
+            explanation: "Un repo est une vente temporaire avec rachat obligatoire, tandis qu’un prêt de titres permet à l’emprunteur de restituer un titre équivalent à la fin du contrat."
+        },
+        {
+            question: "Pourquoi un prime broker joue-t-il un rôle clé dans le securities lending ?",
+            options: [
+                "Il centralise la gestion des collatéraux et optimise le coût du financement.",
+                "Il impose des restrictions réglementaires aux hedge funds.",
+                "Il empêche les opérations de short selling.",
+                "Il garantit les transactions auprès des autorités de régulation."
+            ],
+            answer: "Il centralise la gestion des collatéraux et optimise le coût du financement.",
+            explanation: "Un prime broker facilite le financement des hedge funds en leur prêtant des titres et en gérant les collatéraux de manière efficace."
+        },
+        {
+            question: "Lors d’une opération de securities lending, quel est l’intérêt d’un rebate pour le prêteur ?",
+            options: [
+                "Il représente une commission payée à l’agent de règlement.",
+                "Il constitue une rémunération versée au prêteur en échange du prêt des titres.",
+                "Il est une taxe réglementaire imposée aux transactions de lending.",
+                "Il est un paiement effectué par l’emprunteur pour couvrir le risque de défaut."
+            ],
+            answer: "Il constitue une rémunération versée au prêteur en échange du prêt des titres.",
+            explanation: "Le rebate est une forme de rémunération que le prêteur reçoit en échange du prêt des titres, notamment lorsque le collatéral fourni est du cash."
+        },
+        {
+            question: "Comment un investisseur peut-il arbitrer entre le repo et le securities lending pour optimiser son rendement ?",
+            options: [
+                "En choisissant le lending lorsqu’il veut récupérer des titres et le repo lorsqu’il a besoin de cash.",
+                "En combinant les deux pour maximiser son levier et optimiser son portefeuille d'actifs.",
+                "En n’utilisant que le repo, car il est plus liquide que le lending.",
+                "En évitant les opérations de repo, car elles sont toujours plus coûteuses."
+            ],
+            answer: "En combinant les deux pour maximiser son levier et optimiser son portefeuille d'actifs.",
+            explanation: "Un investisseur peut utiliser le lending pour maximiser son portefeuille de titres et le repo pour obtenir du financement, combinant ainsi rendement et gestion de liquidité."
+        }
+
     ]
     
 };
@@ -326,7 +627,7 @@ const Timer = ({ timeLeft }) => (
 
 const QuestionCard = ({ question, options, onAnswerClick, timeLeft }) => (
     <div className="question-card">
-        <h2>💡 {question}</h2>
+        <h3>💡 {question}</h3>
         <Timer timeLeft={timeLeft} />
         <div className="options-container">
             {options.map((option, index) => (
@@ -346,12 +647,12 @@ const Results = ({ scores }) => {
     const totalScore = scores.basic + scores.moyen + scores.avance;
     return (
         <div className="results">
-            <h2>🎯 Score final : {totalScore} / {Object.values(questions).flat().length}</h2>
+            <h3>🎯 Score final : {totalScore} / {Object.values(questions).flat().length}</h3>
             <p>✅ Niveau Basique : {scores.basic}</p>
             <p>✅ Niveau Moyen : {scores.moyen}</p>
             <p>✅ Niveau Avancé : {scores.avance}</p>
-            {totalScore > 3 ? (
-                <p className="success">🚀 Excellent travail ! Vous maîtrisez bien Les CONCEPTS DELTA 1 !</p>
+            {totalScore > 20 ? (
+                <h3 className="success">🚀 Excellent travail ! Vous maîtrisez bien Les CONCEPTS DELTA 1 !</h3>
             ) : (
                 <p className="fail">📚 Révisez encore un peu pour bien comprendre les concepts, ou retourse sur les GRECS !</p>
             )}
@@ -408,8 +709,8 @@ const Blogs = () => {
                 <Results scores={scores} />
             ) : (
                 <div>
-                    <h1 className="title">💡 Bienvenue au QCM DELTA 1 !</h1>
-                    <h3 className="subtitle">🔹 Niveau : {level.toUpperCase()}</h3>
+                    <h3 className="title">💡 Bienvenue au QCM DELTA 1 !</h3>
+                    <h4 className="subtitle">🔹 Niveau : {level.toUpperCase()}</h4>
                     <QuestionCard
                         question={questions[level][currentQuestion].question}
                         options={questions[level][currentQuestion].options}
