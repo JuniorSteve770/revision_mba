@@ -709,7 +709,7 @@ const Blogs = () => {
                 <Results scores={scores} />
             ) : (
                 <div>
-                    <h3 className="title">💡 Bienvenue au QCM DELTA 1 !</h3>
+                    <h4 className="title">💡 Bienvenue au QCM DELTA 1 !</h4>
                     <h4 className="subtitle">🔹 Niveau : {level.toUpperCase()}</h4>
                     <QuestionCard
                         question={questions[level][currentQuestion].question}
