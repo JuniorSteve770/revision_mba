@@ -275,7 +275,7 @@ const questions = {
         }
     ],
         
-    //  toute la partie venant de deepseek est en dessous
+    //  toute la partie venant de deepseek est en dessous mais la partie du haut est aussi importante 
     moyen: [
         {
             "question": "Quel est l'objectif principal d'un ETF ?",
