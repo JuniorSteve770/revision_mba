@@ -12,6 +12,7 @@ import SignUp from "./pages/signup";
 import SignUp2 from "./pages/signupcopy";
 import Contact from "./pages/contact";
 import Amundi from "./pages/etfamundi";
+import ApiAmundi from "./pages/apiamundi";
 
 
 import './App.css';
@@ -36,9 +37,13 @@ function App() {
             path="/signup"
             element={<SignUp2 />}
         />
-                <Route
+        <Route
             path="/etfamundi"
             element={<Amundi />}
+        />
+                <Route
+            path="/apiamundi"
+            element={<ApiAmundi />}
         />
     </Routes>
 </Router>

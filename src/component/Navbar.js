@@ -26,6 +26,9 @@ const Navbar = () => {
                     <NavLink to="/etfamundi" activeStyle>
                         etf
                     </NavLink>
+                    <NavLink to="/apiamundi" activeStyle>
+                        API
+                    </NavLink>
                 </NavMenu>
             </Nav>
         </>
