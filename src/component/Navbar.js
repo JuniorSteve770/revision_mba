@@ -9,16 +9,22 @@ const Navbar = () => {
             <Nav>
                 <NavMenu>
                     <NavLink to="/about" activeStyle>
-                        About
+                    Grecs/options
                     </NavLink>
                     <NavLink to="/contact" activeStyle>
-                        Contact Us
+                    Trading D1 Cours
                     </NavLink>
                     <NavLink to="/blogs" activeStyle>
-                        Blogs
+                    QCM D1
                     </NavLink>
                     <NavLink to="/sign-up" activeStyle>
-                        Sign Up
+                        OOP
+                    </NavLink>
+                    <NavLink to="/signup" activeStyle>
+                        V2
+                    </NavLink>
+                    <NavLink to="/etfamundi" activeStyle>
+                        etf
                     </NavLink>
                 </NavMenu>
             </Nav>

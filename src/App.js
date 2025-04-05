@@ -9,7 +9,9 @@ import Home from "./pages";
 import About from "./pages/about";
 import Blogs from "./pages/blogs";
 import SignUp from "./pages/signup";
+import SignUp2 from "./pages/signupcopy";
 import Contact from "./pages/contact";
+import Amundi from "./pages/etfamundi";
 
 
 import './App.css';
@@ -29,6 +31,14 @@ function App() {
         <Route
             path="/sign-up"
             element={<SignUp />}
+        />
+        <Route
+            path="/signup"
+            element={<SignUp2 />}
+        />
+                <Route
+            path="/etfamundi"
+            element={<Amundi />}
         />
     </Routes>
 </Router>
