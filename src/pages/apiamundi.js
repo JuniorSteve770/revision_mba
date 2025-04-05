@@ -38,6 +38,7 @@ const questions = {
             "answer": "Exposer des fonctionnalités ou données à des clients/applications",
             "explanation": "Une API expose des services/données que d'autres logiciels peuvent consommer."
         },
+        //ok
         {
             "question": "Parmi ces éléments, lequel caractérise une API REST ?",
             "options": [
