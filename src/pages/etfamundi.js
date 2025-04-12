@@ -6,532 +6,341 @@ import "./QCMStyles.css";
 const questions = {
     basic: [
         {
-            "question": "Quel indice est fréquemment répliqué par un ETF ?",
-            "options": ["FTSE 250", "MSCI World", "DAX 30", "Nikkei 225"],
-            "answer": "MSCI World",
-            "explanation": "L'indice MSCI World est souvent utilisé pour représenter les marchés développés à l'échelle mondiale."
-        },
-        {
-            "question": "Quelle caractéristique décrit le mieux un ETF ?",
-            "options": ["Instrument non coté en bourse", "Instrument à rendement garanti", "Instrument passif répliquant un indice", "Instrument exclusivement obligataire"],
-            "answer": "Instrument passif répliquant un indice",
-            "explanation": "Les ETF sont des instruments passifs qui visent à reproduire la performance d’un indice."
-        },
-        {
-            "question": "Quelle est la fréquence de cotation d’un ETF ?",
-            "options": ["Une fois par semaine", "Une fois par jour", "En continu comme une action", "Tous les trimestres"],
-            "answer": "En continu comme une action",
-            "explanation": "Les ETF sont négociés en bourse tout au long de la journée de marché, comme les actions."
-        },
-        {
-            "question": "Quel est l’un des frais généralement faibles dans un ETF ?",
-            "options": ["Commission de performance", "Frais de gestion", "Frais d'entrée", "Frais de sortie"],
-            "answer": "Frais de gestion",
-            "explanation": "Les frais de gestion des ETF sont généralement faibles comparés aux fonds actifs."
-        },
-        {
-            "question": "Quel type d’ETF réinvestit les dividendes ?",
-            "options": ["Distributif", "Synthétique", "Capitalisant", "Fonds obligataire"],
-            "answer": "Capitalisant",
-            "explanation": "Un ETF capitalisant réinvestit automatiquement les dividendes reçus dans le fonds."
-        },
-        {
-            "question": "Quel type d’ETF amplifie les variations de l’indice suivi ?",
-            "options": ["ETF inverse", "ETF à levier", "ETF capitalisant", "ETF distribuant"],
-            "answer": "ETF à levier",
-            "explanation": "Les ETF à levier multiplient les performances journalières de l’indice, par exemple x2 ou x3."
-        },
-        {
-            "question": "Quel est le principal risque lié à un ETF synthétique ?",
-            "options": ["Risque de marché", "Risque de change", "Risque de contrepartie", "Risque de taux"],
-            "answer": "Risque de contrepartie",
-            "explanation": "Les ETF synthétiques reposent sur un contrat avec une contrepartie qui peut faire défaut."
-        },
-        {
-            "question": "Un ETF est considéré comme liquide car :",
-            "options": ["Il peut être vendu uniquement à la fin de la journée", "Il se revend rapidement sur les marchés", "Il est garanti par l'État", "Il a un rendement fixe"],
-            "answer": "Il se revend rapidement sur les marchés",
-            "explanation": "Les ETF sont cotés en continu et peuvent être achetés ou vendus à tout moment durant les heures de marché."
-        },
-        {
-            "question": "Quelle stratégie d'investissement est associée aux ETF à long terme ?",
-            "options": ["Scalping", "Day trading", "Buy and Hold", "Short selling"],
-            "answer": "Buy and Hold",
-            "explanation": "Le Buy and Hold consiste à conserver l’ETF sur une longue période pour profiter de la croissance du marché."
-        },
-        {
-            "question": "Quel critère est important pour évaluer la performance d’un ETF ?",
-            "options": ["Le spread bid/ask", "Le code ISIN", "La devise de cotation", "Le marché sur lequel il est coté"],
-            "answer": "Le spread bid/ask",
-            "explanation": "Un spread étroit permet de réduire le coût de transaction et reflète une bonne liquidité."
-        },
-        {
-            "question": "Quel fournisseur propose la gamme iShares ?",
-            "options": ["Lyxor", "Vanguard", "Amundi", "BlackRock"],
-            "answer": "BlackRock",
-            "explanation": "iShares est la marque d’ETF de BlackRock, un des leaders mondiaux de la gestion d’actifs."
-        },
-        {
-            "question": "Quel ETF est conçu pour profiter d'une baisse du marché ?",
-            "options": ["ETF sectoriel", "ETF à levier", "ETF inverse", "ETF capitalisant"],
-            "answer": "ETF inverse",
-            "explanation": "Un ETF inverse réplique la performance inverse de l’indice, idéal pour les stratégies de couverture."
-        },
-        {
-            "question": "Quelle est l’utilité d’un ETF thématique ?",
-            "options": ["Suivre la performance des devises", "Miser sur une tendance sectorielle", "Couvrir un portefeuille obligataire", "Réduire les frais de gestion"],
-            "answer": "Miser sur une tendance sectorielle",
-            "explanation": "Les ETF thématiques ciblent des secteurs ou tendances spécifiques comme l’IA ou l’énergie verte."
-        },
-        {
-            "question": "Quelle est la méthode de réplication d’un ETF qui détient physiquement les actifs ?",
-            "options": ["Réplication synthétique", "Réplication directe", "Réplication structurelle", "Réplication inverse"],
-            "answer": "Réplication directe",
-            "explanation": "La réplication directe (physique) implique l'achat réel des titres composant l’indice."
-        },
-        {
-            "question": "Un ETF capitalisant :",
-            "options": ["Distribue régulièrement des dividendes", "Ne verse pas de dividendes", "Investit uniquement en obligations", "Exige un capital élevé"],
-            "answer": "Ne verse pas de dividendes",
-            "explanation": "Les ETF capitalisants réinvestissent les dividendes au lieu de les verser aux investisseurs."
-        },
-        {
-            "question": "Quel est un inconvénient potentiel d’un ETF peu échangé ?",
-            "options": ["Frais de gestion élevés", "Tracking error réduit", "Risque de liquidité", "Surperformance de l’indice"],
-            "answer": "Risque de liquidité",
-            "explanation": "Un ETF peu échangé peut être plus difficile à vendre sans impact sur le prix."
-        },
-        {
-            "question": "Quel indicateur mesure la fidélité d’un ETF à son indice ?",
-            "options": ["Sharpe ratio", "Beta", "Tracking error", "Alpha"],
-            "answer": "Tracking error",
-            "explanation": "La tracking error mesure l'écart entre la performance de l’ETF et celle de son indice."
-        },
-        {
-            "question": "Un ETF distribuant convient particulièrement à :",
-            "options": ["Un investisseur cherchant des revenus réguliers", "Un investisseur à long terme", "Une entreprise", "Un trader à haute fréquence"],
-            "answer": "Un investisseur cherchant des revenus réguliers",
-            "explanation": "Un ETF distribuant reverse les dividendes, ce qui attire les investisseurs orientés revenu."
-        },
-        {
-            "question": "Quelle combinaison décrit le portefeuille 60/40 ?",
-            "options": ["60 % actions, 40 % obligations", "60 % cash, 40 % immobilier", "60 % ETF, 40 % fonds classiques", "60 % Europe, 40 % US"],
-            "answer": "60 % actions, 40 % obligations",
-            "explanation": "La stratégie 60/40 est un classique en gestion de portefeuille équilibrée."
-        },
-        {
-            "question": "Quel est l’avantage principal des ETF face aux fonds classiques ?",
-            "options": ["Frais d’entrée élevés", "Rendement garanti", "Cotation continue", "Distribution obligatoire"],
-            "answer": "Cotation continue",
-            "explanation": "Les ETF se négocient en continu contrairement aux fonds classiques qui ne s’achètent qu’une fois par jour."
-        },
-        {
-            "question": "Un ETF peut-il suivre un indice obligataire ?",
-            "options": ["Oui", "Non", "Uniquement en réplication synthétique", "Seulement aux USA"],
-            "answer": "Oui",
-            "explanation": "Il existe des ETF qui répliquent des indices d’obligations (souveraines, corporate, etc.)."
-        },
-        {
-            "question": "Quel est le rôle d’un ETF dans une stratégie de couverture ?",
-            "options": ["Augmenter l'exposition", "Remplacer les fonds actifs", "Réduire le risque", "Optimiser la fiscalité"],
-            "answer": "Réduire le risque",
-            "explanation": "Certains ETF comme les ETF inverses sont utilisés pour couvrir un portefeuille contre la baisse du marché."
-        },
-        {
-            "question": "Quel critère permet de juger de la popularité d’un ETF ?",
-            "options": ["Nom du fournisseur", "Date de création", "Volume quotidien", "Type d'indice"],
-            "answer": "Volume quotidien",
-            "explanation": "Un volume élevé reflète une forte liquidité et un intérêt du marché."
-        },
-        {
-            "question": "Quel ETF réplique la performance de l’indice CAC 40 ?",
-            "options": ["Amundi MSCI World", "Xtrackers Emerging", "Lyxor CAC 40", "Vanguard Europe"],
-            "answer": "Lyxor CAC 40",
-            "explanation": "L’ETF Lyxor CAC 40 suit l’indice phare de la Bourse de Paris."
-        },
-        {
-            "question": "Pourquoi un investisseur choisirait-il un ETF synthétique ?",
-            "options": ["Meilleure transparence", "Moins de frais", "Répliquer un indice difficile d’accès", "Distribution automatique"],
-            "answer": "Répliquer un indice difficile d’accès",
-            "explanation": "Les ETF synthétiques sont utiles lorsque l’indice contient des titres illiquides ou inaccessibles."
-        },
-        {
-            "question": "Quelle société gère les ETF Vanguard ?",
-            "options": ["Amundi", "BlackRock", "Vanguard Group", "Lyxor"],
-            "answer": "Vanguard Group",
-            "explanation": "Vanguard est l’un des plus grands fournisseurs mondiaux d’ETF et de fonds indiciels."
-        },
-        {
-            "question": "Quel type d’ETF est recommandé pour diversifier rapidement ?",
-            "options": ["ETF sectoriel", "ETF à levier", "ETF World", "ETF inverse"],
-            "answer": "ETF World",
-            "explanation": "Un ETF mondial comme MSCI World permet une diversification géographique globale immédiate."
-        },
-        {
-            "question": "Comment appelle-t-on la différence entre prix acheteur et vendeur d’un ETF ?",
-            "options": ["Tracking error", "Spread", "Rendement", "Beta"],
-            "answer": "Spread",
-            "explanation": "Le spread représente la différence entre les prix d’achat et de vente sur le marché."
-        },
-        {
-            "question": "Quel ETF est le plus adapté à un investisseur souhaitant miser sur l’intelligence artificielle ?",
-            "options": ["ETF inverse CAC 40", "ETF thématique IA", "ETF obligataire euro", "ETF dividende"],
-            "answer": "ETF thématique IA",
-            "explanation": "Un ETF thématique IA regroupe des entreprises du secteur de l’intelligence artificielle."
-        },
-        {
-            "question": "Que signifie TER dans le contexte des ETF ?",
-            "options": ["Taux d’Équilibre de Risque", "Taux d’Exposition Résiduelle", "Total Expense Ratio", "Taux Effectif Recalculé"],
-            "answer": "Total Expense Ratio",
-            "explanation": "Le TER est le ratio de frais total prélevé chaque année sur l’actif de l’ETF."
-        }, 
-        {
-            "question": "Quel est l'objectif principal d'un ETF ?",
+            "question": "Quelle est la principale différence entre un Autocall et un Phoenix ?",
             "options": [
-                "Battre systématiquement la performance de son indice de référence",
-                "Répliquer passivement la performance d'un indice ou d'un actif",
-                "Proposer une gestion active avec rotation sectorielle",
-                "Garantir un rendement fixe comme une obligation"
+                "Le Phoenix a une garantie de capital, l’Autocall non",
+                "Le Phoenix propose un effet mémoire sur les coupons, l’Autocall non",
+                "L’Autocall est basé sur le taux d’intérêt, le Phoenix sur les actions",
+                "L’Autocall n’a pas de date d’observation"
             ],
-            "answer": "Répliquer passivement la performance d'un indice ou d'un actif",
-            "explanation": "Les ETF sont conçus pour suivre un indice ou un actif, pas pour le surperformer."
+            "answer": "Le Phoenix propose un effet mémoire sur les coupons, l’Autocall non",
+            "explanation": "Le Phoenix mémorise les coupons non versés et peut les payer ultérieurement si les conditions sont remplies."
         },
         {
-            "question": "Quelle est la principale différence entre un ETF physique et synthétique ?",
+            "question": "Quel produit combine une protection du capital à l’échéance avec une participation limitée à un sous-jacent ?",
             "options": [
-                "L'ETF physique utilise des dérivés, l'ETF synthétique détient les actifs",
-                "L'ETF physique détient les actifs, l'ETF synthétique utilise des swaps",
-                "Les ETF synthétiques ont toujours des frais plus élevés",
-                "Les ETF physiques ne répliquent que les indices obligataires"
+                "Reverse Convertible",
+                "Snowball",
+                "Capital Protected Note",
+                "Digital Option"
             ],
-            "answer": "L'ETF physique détient les actifs, l'ETF synthétique utilise des swaps",
-            "explanation": "La réplication physique implique la détention directe des actifs, tandis que la synthétique utilise des produits dérivés."
+            "answer": "Capital Protected Note",
+            "explanation": "Les CPN garantissent le capital tout en permettant une participation partielle à un actif, souvent avec cap."
         },
         {
-            "question": "Quel est un avantage principal d’un ETF ?",
+            "question": "Le produit qui présente un risque de remboursement dans une autre devise est :",
             "options": [
-                "Liquidité limitée",
-                "Frais élevés",
-                "Accessibilité",
-                "Performance garantie"
+                "Range Accrual Note",
+                "Dual Currency Note",
+                "Phoenix",
+                "Callable Bond"
             ],
-            "answer": "Accessibilité",
-            "explanation": "Les ETF sont accessibles avec un petit capital et peuvent être achetés/vendus en continu."
+            "answer": "Dual Currency Note",
+            "explanation": "Le DCN inclut un risque de change, car il peut être remboursé dans une devise alternative."
         },
         {
-            "question": "Parmi les éléments suivants, lequel est un type d'ETF ?",
+            "question": "Parmi ces produits, lequel est particulièrement sensible à l’environnement de taux et non à l’évolution d’un actif action ?",
             "options": [
-                "ETF garanti",
-                "ETF bancaire",
-                "ETF inversé",
-                "ETF spéculatif"
+                "Phoenix",
+                "Snowball",
+                "CMS Spread Note",
+                "Equity Linked Note"
             ],
-            "answer": "ETF inversé",
-            "explanation": "L’ETF inversé réplique la baisse de l’indice sous-jacent, il est utile en couverture."
+            "answer": "CMS Spread Note",
+            "explanation": "Le CMS Spread est basé sur l’écart entre deux taux (ex : CMS 10Y - CMS 2Y)."
         },
         {
-            "question": "Quel est le risque principal d’un ETF synthétique ?",
+            "question": "Quel produit a une structure de coupons qui peut générer des pertes accumulées plutôt que des gains ?",
             "options": [
-                "Risque de change",
-                "Risque de contrepartie",
-                "Risque politique",
-                "Risque fiscal"
+                "Snowball",
+                "Digital Option",
+                "Snowblow",
+                "Phoenix"
             ],
-            "answer": "Risque de contrepartie",
-            "explanation": "L’ETF synthétique dépend de la solidité de la contrepartie dans le contrat de swap."
+            "answer": "Snowblow",
+            "explanation": "Le Snowblow est un produit 'inverse' du Snowball, accumulant des pénalités si les conditions sont mauvaises."
         },
         {
-            "question": "Quelle est la stratégie ‘Buy and Hold’ avec un ETF ?",
+            "question": "Quel produit permet de gagner un coupon fixe uniquement si un niveau de marché est atteint à l’échéance ?",
             "options": [
-                "Vente rapide après achat",
-                "Achat et conservation à long terme",
-                "Utilisation pour hedging",
-                "Achat à crédit"
+                "Capital Protected Note",
+                "Callable Bond",
+                "Digital Option",
+                "Range Accrual"
             ],
-            "answer": "Achat et conservation à long terme",
-            "explanation": "La stratégie 'Buy and Hold' consiste à conserver l'ETF pour bénéficier de la performance sur le long terme."
+            "answer": "Digital Option",
+            "explanation": "Les Digital Options fonctionnent comme des paris binaires : gain fixe si une condition est remplie, sinon zéro."
         },
         {
-            "question": "Quel fournisseur d’ETF est bien connu ?",
+            "question": "Le pricing d’une Callable Bond est généralement fait à l’aide de :",
             "options": [
-                "Morgan Stanley",
-                "BlackRock (iShares)",
-                "Banque de France",
-                "BPI"
+                "Monte Carlo",
+                "Modèle taux + arbre binomial",
+                "Formule fermée",
+                "Interpolation linéaire"
             ],
-            "answer": "BlackRock (iShares)",
-            "explanation": "BlackRock via sa filiale iShares est l’un des plus grands émetteurs d’ETF dans le monde."
+            "answer": "Modèle taux + arbre binomial",
+            "explanation": "L’arbre permet de modéliser le call anticipé de l’émetteur, avec l’évolution de la courbe des taux."
         },
         {
-            "question": "Quel ETF suit l’indice CAC 40 ?",
+            "question": "Le produit Equity Linked Note (ELN) est généralement structuré avec :",
             "options": [
-                "Xtrackers MSCI",
-                "Amundi MSCI World",
-                "Lyxor CAC 40",
-                "iShares S&P 500"
+                "Participation, cap, barrière",
+                "Coupon fixe, obligation convertible",
+                "Capital garanti, participation intégrale",
+                "Barrière désactivante, coupon memory"
             ],
-            "answer": "Lyxor CAC 40",
-            "explanation": "L’ETF Lyxor CAC 40 réplique la performance de l’indice CAC 40 français."
+            "answer": "Participation, cap, barrière",
+            "explanation": "L’ELN permet de capter une partie de la performance action tout en limitant le risque grâce à une barrière."
+        },
+        {
+            "question": "Quel produit dépend du temps passé par un taux d’intérêt dans une certaine plage ?",
+            "options": [
+                "Digital Option",
+                "CMS Spread Note",
+                "Range Accrual Note",
+                "Autocall"
+            ],
+            "answer": "Range Accrual Note",
+            "explanation": "Les Range Accrual paient un coupon proportionnel au temps pendant lequel le taux reste dans une plage."
+        },
+        {
+            "question": "Quel est l’élément clé qui empêche l’usage d’une formule fermée pour pricer un Snowball ?",
+            "options": [
+                "Son indexation sur plusieurs actions",
+                "La dépendance aux trajectoires (path-dependent)",
+                "Le caractère américain de l’option",
+                "La présence d’un cap sur les coupons"
+            ],
+            "answer": "La dépendance aux trajectoires (path-dependent)",
+            "explanation": "Le Snowball cumule les coupons selon un historique de marché, ce qui impose un modèle basé sur simulation (Monte Carlo)."
         }
     ],
         
     //  toute la partie venant de deepseek est en dessous mais la partie du haut est aussi importante 
     moyen: [
         {
-            "question": "Quel est l'objectif principal d'un ETF ?",
+            "question": "Pourquoi un produit comme le Phoenix nécessite-t-il l'utilisation de la méthode Monte Carlo pour son pricing ?",
             "options": [
-                "Battre systématiquement la performance de son indice de référence",
-                "Répliquer passivement la performance d'un indice ou d'un actif",
-                "Proposer une gestion active avec rotation sectorielle",
-                "Garantir un rendement fixe comme une obligation"
+                "Parce qu'il contient une barrière désactivante continue",
+                "Parce que ses coupons sont conditionnels et cumulatifs sur plusieurs dates d’observation",
+                "Parce qu'il est indexé sur plusieurs devises",
+                "Parce que le produit est une simple obligation avec coupon fixe"
             ],
-            "answer": "Répliquer passivement la performance d'un indice ou d'un actif",
-            "explanation": "Les ETF sont conçus pour suivre un indice ou un actif, pas pour le surperformer."
+            "answer": "Parce que ses coupons sont conditionnels et cumulatifs sur plusieurs dates d’observation",
+            "explanation": "Le Phoenix est path-dependent avec effet mémoire sur les coupons, ce qui le rend difficile à modéliser analytiquement ou avec un arbre simple."
         },
         {
-            "question": "Quelle est la principale différence entre un ETF physique et synthétique ?",
+            "question": "Quelle différence fondamentale justifie l’usage d’un arbre binomial plutôt qu’un modèle fermé pour pricer une Reverse Convertible ?",
             "options": [
-                "L'ETF physique utilise des dérivés, l'ETF synthétique détient les actifs",
-                "L'ETF physique détient les actifs, l'ETF synthétique utilise des swaps",
-                "Les ETF synthétiques ont toujours des frais plus élevés",
-                "Les ETF physiques ne répliquent que les indices obligataires"
+                "Parce que l’arbre permet de gérer des flux fixes",
+                "Parce que la Reverse Convertible a des caractéristiques continues",
+                "Parce que l’arbre modélise mieux la barrière et les paiements conditionnels",
+                "Parce que la formule fermée est trop précise"
             ],
-            "answer": "L'ETF physique détient les actifs, l'ETF synthétique utilise des swaps",
-            "explanation": "La réplication physique implique la détention directe des actifs, tandis que la synthétique utilise des produits dérivés."
+            "answer": "Parce que l’arbre modélise mieux la barrière et les paiements conditionnels",
+            "explanation": "La Reverse Convertible implique des barrières et des remboursements conditionnels, ce qui se modélise bien avec des arbres (scénarios discrets)."
         },
         {
-            "question": "Qu'est-ce que le 'tracking error' d'un ETF ?",
+            "question": "Quel produit dans le tableau implique le risque de remboursement dans une devise différente de celle de souscription ?",
             "options": [
-                "L'écart entre la performance de l'ETF et celle de son indice de référence",
-                "La différence entre le prix d'achat et de vente de l'ETF",
-                "L'erreur de calcul des dividendes distribués",
-                "Le délai de règlement des transactions sur ETF"
+                "Capital Protected Note",
+                "Phoenix",
+                "Dual Currency Note (DCN)",
+                "Range Accrual Note"
             ],
-            "answer": "L'écart entre la performance de l'ETF et celle de son indice de référence",
-            "explanation": "Le tracking error mesure la précision avec laquelle l'ETF suit son indice."
+            "answer": "Dual Currency Note (DCN)",
+            "explanation": "Le DCN combine un coupon fixe avec la possibilité de remboursement dans une devise alternative, ce qui implique un risque FX."
         },
         {
-            "question": "Pourquoi les ETF sont-ils considérés comme plus transparents que les fonds mutuels ?",
+            "question": "Pourquoi le pricing d’un produit Snowball n’est-il pas adapté à une méthode par formule fermée ?",
             "options": [
-                "Ils publient quotidiennement leur composition complète",
-                "Ils révèlent leurs stratégies de trading algorithmique",
-                "Ils fournissent les noms de tous leurs investisseurs",
-                "Ils publient en temps réel leurs ordres sur le marché"
+                "Parce que les Snowballs sont toujours en devise",
+                "Parce qu’ils impliquent des courbes de taux non plates",
+                "Parce que leurs coupons sont périodiques, conditionnels et s’accumulent dans le temps",
+                "Parce qu’ils n’ont pas de barrière"
             ],
-            "answer": "Ils publient quotidiennement leur composition complète",
-            "explanation": "La plupart des ETF divulguent leur portefeuille quotidiennement, contrairement aux fonds mutuels."
+            "answer": "Parce que leurs coupons sont périodiques, conditionnels et s’accumulent dans le temps",
+            "explanation": "Les Snowballs sont des produits fortement path-dependent. Leur modélisation nécessite des scénarios complexes sur plusieurs dates."
         },
         {
-            "question": "Comment un ETF leveraged 3x maintient-il son effet de levier quotidien ?",
+            "question": "Quelle est la principale justification pour utiliser un modèle PDE pour pricer une Callable Bond ?",
             "options": [
-                "En réinvestissant les gains chaque jour via des contrats à terme",
-                "En empruntant directement 3 fois son actif net",
-                "En utilisant un mix de swaps et d'options exotiques",
-                "En appliquant un effet de levier constant sur 1 mois"
+                "La bond est exprimée en devise étrangère",
+                "La formule fermée ne gère pas le call anticipé",
+                "Le flux est aléatoire à chaque instant",
+                "Il n’existe pas d’autre méthode"
             ],
-            "answer": "En réinvestissant les gains chaque jour via des contrats à terme",
-            "explanation": "Les ETF leveraged recalculent quotidiennement leur exposition, ce qui peut entraîner des écarts importants par rapport à la performance attendue sur le long terme."
+            "answer": "La formule fermée ne gère pas le call anticipé",
+            "explanation": "Les obligations callables impliquent des droits de rappel anticipé. Les modèles PDE permettent de gérer les conditions de call à tout moment du temps."
         },
         {
-            "question": "Quel mécanisme permet aux ETF de maintenir leur parité avec la valeur liquidative ?",
+            "question": "Quelle méthode de pricing est la plus adaptée pour un produit de type Range Accrual sur des taux ?",
             "options": [
-                "Le processus de création/rachat par les teneurs de marché",
-                "L'intervention directe de la SEC ou de l'AMF",
-                "La synchronisation automatique avec le marché au comptant",
-                "L'arbitrage algorithmique haute fréquence obligatoire"
+                "Formule fermée (Black-Scholes)",
+                "Monte Carlo temporel",
+                "Interpolation linéaire",
+                "Décomposition analytique"
             ],
-            "answer": "Le processus de création/rachat par les teneurs de marché",
-            "explanation": "Les Authorized Participants créent ou rachètent des blocs d'ETF pour maintenir l'alignement prix/NAV."
+            "answer": "Monte Carlo temporel",
+            "explanation": "Le Range Accrual dépend du temps passé dans un intervalle donné, ce qui est naturellement modélisé par des trajectoires temporelles."
         },
         {
-            "question": "Dans un ETF obligataire, quel est le principal défi lié au réinvestissement des coupons ?",
+            "question": "Quel produit peut être structuré comme une combinaison de cap, participation, barrière et capital garanti ?",
             "options": [
-                "Le risque de change sur les obligations libellées en devises étrangères",
-                "La nécessité de répliquer exactement la duration de l'indice",
-                "La gestion des appels anticipés (call risk) sur les corporate bonds",
-                "L'impact des taux négatifs sur les obligations souveraines"
+                "Autocall",
+                "Capital Protected Note",
+                "Callable Bond",
+                "Digital Option"
             ],
-            "answer": "La nécessité de répliquer exactement la duration de l'indice",
-            "explanation": "Les flux de coupons doivent être réinvestis en respectant la duration et la convexité de l'indice."
+            "answer": "Capital Protected Note",
+            "explanation": "Les CPN sont souvent composées d’un zéro coupon (pour le capital garanti) + une option (pour la participation plafonnée)."
         },
         {
-            "question": "Pourquoi les ETF sur matières premières utilisent-ils majoritairement des contrats à terme ?",
+            "question": "Quel critère justifie que l’Equity Linked Note soit pricé via une combinaison de Monte Carlo et formule analytique ?",
             "options": [
-                "Pour éviter les coûts de stockage physique",
-                "Pour bénéficier d'un effet de levier réglementaire",
-                "Car c'est la seule méthode autorisée par la CFTC",
-                "Pour contourner les limites de position sur le marché spot"
+                "Il est uniquement en devise étrangère",
+                "La participation est conditionnelle avec cap, ce qui nécessite simulation + calcul direct",
+                "Il a une barrière continue à surveiller",
+                "Les flux sont fixes à toutes les dates"
             ],
-            "answer": "Pour éviter les coûts de stockage physique",
-            "explanation": "L'utilisation de contrats à terme élimine les coûts logistiques liés au stockage des matières premières physiques."
+            "answer": "La participation est conditionnelle avec cap, ce qui nécessite simulation + calcul direct",
+            "explanation": "Les ELN sont souvent hybrides : une partie analytique (option classique) et une partie plus complexe à simuler (participation plafonnée, barrière)."
+        },
+        {
+            "question": "Quel produit dans le tableau est explicitement sensible à l'écartement de la courbe des taux ?",
+            "options": [
+                "Dual Currency Note",
+                "Range Accrual Note",
+                "CMS Spread Note",
+                "Snowball"
+            ],
+            "answer": "CMS Spread Note",
+            "explanation": "Les CMS Spread Notes paient un coupon indexé sur l’écart entre deux taux (ex : CMS 10Y – CMS 2Y)."
+        },
+        {
+            "question": "Pourquoi le produit Digital Option est l’un des rares à pouvoir être pricé avec précision par formule fermée ?",
+            "options": [
+                "Il n’a aucune barrière",
+                "Il est basé sur une probabilité binaire avec barrière fixe à maturité",
+                "Il est toujours adossé à un actif obligataire",
+                "Il ne génère aucun flux conditionnel"
+            ],
+            "answer": "Il est basé sur une probabilité binaire avec barrière fixe à maturité",
+            "explanation": "Les Digital Options sont des options binaires, et il existe des formules fermées précises pour ce type de payoff."
         }
     ],
     avance: [
         
         {
-            "question": "Quel est l'impact du 'contango' sur un ETF pétrolier utilisant des futures ?",
+            "question": "Dans un produit Autocall avec une barrière de protection européenne à 60%, quelle hypothèse de marché rendrait l'utilisation de la méthode Monte Carlo plus pertinente que celle de l’arbre binomial ?",
             "options": [
-                "Une érosion de la performance lorsque les contrats longs sont plus chers",
-                "Une amplification des gains en cas de hausse des prix spot",
-                "Une neutralisation automatique par le mécanisme de création/rachat",
-                "Une conversion obligatoire en ETF physique après 3 mois"
+                "La volatilité implicite est très faible",
+                "Le produit contient plusieurs sous-jacents avec corrélation",
+                "Le sous-jacent suit une loi uniforme",
+                "Le taux sans risque est nul"
             ],
-            "answer": "Une érosion de la performance lorsque les contrats longs sont plus chers",
-            "explanation": "Le contango force un coût de report lorsque les contrats à échéance lointaine sont plus chers que ceux à courte échéance."
+            "answer": "Le produit contient plusieurs sous-jacents avec corrélation",
+            "explanation": "Le Monte Carlo permet de simuler facilement plusieurs actifs corrélés, ce qui est difficile avec un arbre."
         },
         {
-            "question": "Comment un ETF inverse -1x sur le S&P 500 génère-t-il son rendement quotidien ?",
+            "question": "Quel impact majeur a une barrière discrète vs continue sur la méthode de pricing d'une Barrier Option ?",
             "options": [
-                "En vendant à découvert des futures sur l'indice",
-                "En achetant des put options ATM quotidiennement",
-                "En utilisant des swaps avec des banques contreparties",
-                "En répliquant exactement le portefeuille de l'indice en positions courtes"
+                "La barrière continue exige l’utilisation de PDE ou d’un ajustement analytique",
+                "La barrière discrète n’affecte pas le pricing",
+                "La barrière continue rend le produit inéligible à la modélisation par LexiFi",
+                "La barrière discrète impose un recalcul des taux forward"
             ],
-            "answer": "En utilisant des swaps avec des banques contreparties",
-            "explanation": "La majorité des ETF inversés utilisent des swaps pour obtenir l'exposition inverse, avec un recalibrage quotidien."
+            "answer": "La barrière continue exige l’utilisation de PDE ou d’un ajustement analytique",
+            "explanation": "Les barrières continues nécessitent un suivi constant, ce qui est difficile à simuler sans PDE ou corrections."
         },
         {
-            "question": "Quel risque spécifique affecte les ETF synthétiques en période de stress de marché ?",
+            "question": "Pourquoi la méthode de grille + interpolation est peu adaptée à un produit comme le Phoenix ?",
             "options": [
-                "Le risque de contrepartie sur les swaps",
-                "Le risque de change sur le panier de substitution",
-                "Le risque de liquidité sur l'indice de référence",
-                "Le risque de taux sur les obligations de collateral"
+                "Parce qu’elle introduit des biais statistiques non corrigibles",
+                "Parce que le Phoenix est fortement path-dependent avec des variables non discrétisables facilement",
+                "Parce qu’elle ne permet pas d’utiliser plusieurs sous-jacents",
+                "Parce qu’elle ne fonctionne que pour les produits à capital garanti"
             ],
-            "answer": "Le risque de contrepartie sur les swaps",
-            "explanation": "En cas de défaillance de la contrepartie au swap, l'ETF pourrait ne pas répliquer correctement l'indice."
+            "answer": "Parce que le Phoenix est fortement path-dependent avec des variables non discrétisables facilement",
+            "explanation": "Le Phoenix dépend du chemin complet de l’indice (effet mémoire), ce qui rend une grille trop rigide."
         },
         {
-            "question": "Pourquoi les ETF smart beta sur facteurs présentent-ils souvent un turnover élevé ?",
+            "question": "Pourquoi un produit Snowblow serait plus risqué en environnement de forte volatilité que son équivalent Snowball ?",
             "options": [
-                "A cause du rééquilibrage fréquent pour maintenir l'exposition au facteur",
-                "En raison des arbitrages fréquents par les teneurs de marché",
-                "A cause des appels de marge sur les positions en derivatives",
-                "En raison des rotations sectoriales imposées par la régulation"
+                "Parce que les Snowblow ont des coupons inversés (pénalités au lieu de gains)",
+                "Parce qu’ils n’ont pas de protection du capital",
+                "Parce qu’ils ont une devise alternative",
+                "Parce qu’ils n’ont pas de dates d’observation définies"
             ],
-            "answer": "A cause du rééquilibrage fréquent pour maintenir l'exposition au facteur",
-            "explanation": "Les stratégies factorielles nécessitent des rééquilibrages réguliers qui génèrent des coûts de transaction."
+            "answer": "Parce que les Snowblow ont des coupons inversés (pénalités au lieu de gains)",
+            "explanation": "Contrairement au Snowball qui accumule les gains, le Snowblow accumule les pertes dès que les conditions sont défavorables."
         },
         {
-            "question": "Quelle technique permet aux ETF obligataires de gérer les échéances multiples ?",
+            "question": "Dans un ELN avec cap à 120% et barrière à 70%, que modifie l'ajout d'une participation de 80% dans le payoff ?",
             "options": [
-                "Le sampling optimisé sur les obligations les plus liquides",
-                "Le lissage des coupons via des swaps de taux",
-                "La réplication synthétique totale avec un seul contrat",
-                "L'utilisation exclusive de zéro-coupons"
+                "Le produit devient éligible au pricing par arbre",
+                "Le payoff devient non linéaire et doit être partiellement simulé",
+                "Le cap disparaît",
+                "La barrière devient implicite"
             ],
-            "answer": "Le sampling optimisé sur les obligations les plus liquides",
-            "explanation": "Les ETF utilisent souvent un échantillon représentatif pour éviter de détenir toutes les lignes illiquides."
+            "answer": "Le payoff devient non linéaire et doit être partiellement simulé",
+            "explanation": "Une participation <100% sur une borne capée implique une transformation non linéaire du payoff, souvent modélisée par simulation."
         },
         {
-            "question": "Comment les ETF thématiques sur l'IA diffèrent-ils structurellement des ETF sectoriels classiques ?",
+            "question": "Quel ajustement est nécessaire dans une simulation Monte Carlo pour évaluer une Digital Option avec une barrière très proche du spot ?",
             "options": [
-                "Ils utilisent des algorithmes de machine learning pour sélectionner les titres",
-                "Leur univers d'investissement traverse plusieurs secteurs GICS",
-                "Ils répliquent des indices construits par des fonds quantitatifs",
-                "Ils combinent positions longues et courtes dans le même ETF"
+                "Augmenter le nombre de trajectoires et réduire le pas de temps",
+                "Changer la devise de référence",
+                "Appliquer une couverture gamma constante",
+                "Utiliser une formule fermée de secours"
             ],
-            "answer": "Leur univers d'investissement traverse plusieurs secteurs GICS",
-            "explanation": "Les ETF thématiques ciblent des tendances qui couvrent généralement plusieurs secteurs traditionnels."
+            "answer": "Augmenter le nombre de trajectoires et réduire le pas de temps",
+            "explanation": "Une barrière proche du spot nécessite plus de précision : il faut plus de granularité dans les scénarios simulés."
         },
         {
-            "question": "Quel est l'avantage principal d'un ETF à capitalisation versus distributif pour un investisseur non-résident ?",
+            "question": "Pourquoi une Callable Bond peut nécessiter une résolution backward dans un arbre binomial ?",
             "options": [
-                "Eviter la retenue à la source sur les dividendes",
-                "Bénéficier d'un effet de levier fiscal",
-                "Réduire le tracking error grâce au réinvestissement interne",
-                "Accéder à des produits dérivés plus sophistiqués"
+                "Parce que l'option de call dépend du futur comportement du taux d’intérêt",
+                "Parce qu’elle contient un effet mémoire sur les coupons",
+                "Parce qu’elle est indexée sur une volatilité implicite",
+                "Parce qu’elle n’a pas de date d’échéance"
             ],
-            "answer": "Eviter la retenue à la source sur les dividendes",
-            "explanation": "Les ETF capitalisants réinvestissent les dividendes sans distribution, évitant ainsi les retenues fiscales."
+            "answer": "Parce que l'option de call dépend du futur comportement du taux d’intérêt",
+            "explanation": "Le prix optimal de call dépend de la valeur future du titre, ce qui nécessite une résolution backward dans l’arbre."
         },
         {
-            "question": "Pourquoi les ETF Bitcoin en Europe utilisent-ils majoritairement la réplication synthétique ?",
+            "question": "Quel serait le principal défi de modélisation d’un CMS Spread Note avec une participation indexée sur un facteur externe ?",
             "options": [
-                "Pour contourner l'interdiction réglementaire de détention directe",
-                "A cause des coûts élevés de stockage physique sécurisé",
-                "Pour bénéficier d'un traitement fiscal plus favorable",
-                "A cause de l'illiquidité des marchés spot de crypto"
+                "La volatilité des spreads est inconnue",
+                "Les CMS sont discontinus",
+                "L’indice externe pourrait être non stochastique",
+                "Le payoff devient multidimensionnel avec dépendances croisées"
             ],
-            "answer": "Pour contourner l'interdiction réglementaire de détention directe",
-            "explanation": "La régulation européenne interdit aux OPCVM de détenir directement des cryptos, d'où l'usage de swaps."
+            "answer": "Le payoff devient multidimensionnel avec dépendances croisées",
+            "explanation": "L’ajout d’un facteur externe crée une dépendance double qui rend le pricing beaucoup plus complexe."
         },
         {
-            "question": "Quel mécanisme protège les investisseurs dans un ETF synthétique full collateralized ?",
+            "question": "Quel impact sur le pricing d’un DCN (Dual Currency Note) aurait une forte corrélation négative entre taux et devise ?",
             "options": [
-                "Le collatéral est détenu par un tiers indépendant",
-                "Les swaps sont garantis par la banque centrale",
-                "Le panier de substitution est négociable en continu",
-                "La contrepartie reverse un spread fixe quotidien"
+                "Le produit devient non valorisable",
+                "Le risque de change est annulé",
+                "Le pricing doit intégrer un ajustement croisé entre taux et FX",
+                "La participation est neutralisée"
             ],
-            "answer": "Le collatéral est détenu par un tiers indépendant",
-            "explanation": "Le collatéral (généralement des obligations) est séquestré pour couvrir 100% de l'exposition."
+            "answer": "Le pricing doit intégrer un ajustement croisé entre taux et FX",
+            "explanation": "La corrélation taux/FX modifie la probabilité de remboursement dans la mauvaise devise. Cela nécessite un ajustement dans le modèle Garman-Kohlhagen."
         },
         {
-            "question": "Comment les ETF à gestion active contournent-ils l'obligation de transparence quotidienne ?",
+            "question": "Pourquoi un produit comme la Range Accrual est sensible à la discrétisation temporelle lors d’un pricing Monte Carlo ?",
             "options": [
-                "En utilisant des compartiments opaques sous forme de fonds à compartiments",
-                "En ne publiant que les 10 principales positions",
-                "En ayant une dérogation spécifique de l'ESMA",
-                "En se classant comme fonds privés plutôt qu'OPCVM"
+                "Car il repose sur une observation continue du taux à l’intérieur d’une plage",
+                "Car les taux sont toujours volatils",
+                "Car il est obligatoirement en devise",
+                "Car il n’a pas de payoff défini à maturité"
             ],
-            "answer": "En ne publiant que les 10 principales positions",
-            "explanation": "Les ETF actifs bénéficient souvent de règles de divulgation allégées par rapport aux ETF passifs."
-        },
-        {
-            "question": "Quelle innovation récente permet aux ETF de répliquer des stratégies alternatives ?",
-            "options": [
-                "L'utilisation de swaps sur indices customisés",
-                "L'intégration de positions en private equity",
-                "La réplication physique de contrats OTC non standardisés",
-                "Le pairing avec des hedge funds via des feeder funds"
-            ],
-            "answer": "L'utilisation de swaps sur indices customisés",
-            "explanation": "Les fournisseurs créent des indices sur-mesure répliqués via swaps pour des stratégies complexes."
-        },
-        {
-            "question": "Pourquoi les ETF ESG appliquent-ils souvent des filtres controversés sur les secteurs ?",
-            "options": [
-                "Pour respecter les critères d'exclusion stricts des investisseurs institutionnels",
-                "A cause des limitations techniques des plateformes de trading",
-                "Pour éviter le surcoût des analyses fondamentales",
-                "En raison des obligations légales de diversification"
-            ],
-            "answer": "Pour respecter les critères d'exclusion stricts des investisseurs institutionnels",
-            "explanation": "Les exclusions sectorielles (armes, tabac, etc.) répondent aux chartes ESG des grands investisseurs."
-        },
-        {
-            "question": "Quel est l'impact du mécanisme de création/rachat sur la liquidité secondaire d'un ETF ?",
-            "options": [
-                "Il permet aux teneurs de marché d'arbitrer les écarts prix/NAV",
-                "Il force une liquidité minimale réglementaire",
-                "Il génère des frais de transaction supplémentaires",
-                "Il limite la participation des investisseurs particuliers"
-            ],
-            "answer": "Il permet aux teneurs de marché d'arbitrer les écarts prix/NAV",
-            "explanation": "Ce mécanisme assure que le prix de l'ETF reste proche de sa valeur liquidative intrinsèque."
-        },
-        {
-            "question": "Comment les ETF ultra-short obligataires gèrent-ils le risque de taux ?",
-            "options": [
-                "En limitant la duration du portefeuille à moins de 1 an",
-                "En utilisant exclusivement des floater notes",
-                "En couvrant avec des swaps de taux pay-fixed",
-                "En diversifiant sur plusieurs devises"
-            ],
-            "answer": "En limitant la duration du portefeuille à moins de 1 an",
-            "explanation": "Une duration très courte minimise la sensibilité aux variations de taux."
-        },
-        {
-            "question": "Quelle particularité distingue les ETF multi-actifs des fonds traditionnels ?",
-            "options": [
-                "Ils peuvent ajuster dynamiquement leur allocation sans création/rachat",
-                "Ils sont obligatoirement synthétiques",
-                "Ils combinent des ETF physiques et des dérivés",
-                "Ils répliquent des indices alternatifs pondérés par la volatilité"
-            ],
-            "answer": "Ils peuvent ajuster dynamiquement leur allocation sans création/rachat",
-            "explanation": "Ces ETF utilisent des mécanismes innovants pour modifier leur exposition sans processus de création/rachat."
+            "answer": "Car il repose sur une observation continue du taux à l’intérieur d’une plage",
+            "explanation": "Plus la discrétisation est grossière, plus on risque de rater les moments où le taux est dans le range. Cela fausse l’accrual réel."
         }
     ]
 };
