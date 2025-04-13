@@ -6,6 +6,72 @@ import "./QCMStyles.css";
 const questions = {
     basic: [
         {
+            "question": "Le produit CMS Spread Note est principalement sensible à :",
+            "options": [
+                "La courbe des taux forward FX",
+                "L'écart entre deux CMS de durées différentes",
+                "La volatilité implicite des actions sous-jacentes",
+                "La performance d’un indice pondéré de taux souverains"
+            ],
+            "answer": "L'écart entre deux CMS de durées différentes",
+            "explanation": "Le CMS Spread Note tire sa valeur de la différence entre deux taux swap (ex. 10Y - 2Y), permettant de parier sur la pente de la courbe des taux."
+        },
+        {
+            "question": "Quel élément a le plus d’impact sur le pricing d’un Dual Currency Note à maturité ?",
+            "options": [
+                "La corrélation entre les taux des deux pays",
+                "Le niveau de participation action",
+                "La probabilité de franchissement de barrière",
+                "La variation du taux de change par rapport au strike"
+            ],
+            "answer": "La variation du taux de change par rapport au strike",
+            "explanation": "Le remboursement se fait dans la devise défavorable si le taux de change franchit un certain niveau, ce qui influence fortement le pricing."
+        },
+        {
+            "question": "La caractéristique commune entre un Snowball et un Phoenix est :",
+            "options": [
+                "La protection intégrale du capital",
+                "Le remboursement automatique mensuel",
+                "L’accumulation de coupons avec effet mémoire",
+                "Une barrière désactivante en fin de période"
+            ],
+            "answer": "L’accumulation de coupons avec effet mémoire",
+            "explanation": "Les deux produits peuvent accumuler des coupons conditionnels non versés grâce à un mécanisme de mémoire."
+        },
+        {
+            "question": "Un produit de type Range Accrual est défini par :",
+            "options": [
+                "Un gain fixe si l’actif reste au-dessus de la barrière",
+                "Un coupon accumulé selon le temps passé dans un intervalle de taux",
+                "Un effet de cliquet automatique basé sur le spread FX",
+                "Une participation fixe plafonnée avec call émetteur"
+            ],
+            "answer": "Un coupon accumulé selon le temps passé dans un intervalle de taux",
+            "explanation": "Le Range Accrual Note offre un coupon qui s'accroît selon le pourcentage de temps pendant lequel le taux reste dans une plage définie."
+        },
+        {
+            "question": "Lequel de ces produits présente à la fois un risque de change et une non-garantie du capital ?",
+            "options": [
+                "Capital Protected Note",
+                "Digital Option",
+                "Dual Currency Note",
+                "Callable Bond"
+            ],
+            "answer": "Dual Currency Note",
+            "explanation": "Le DCN combine un risque de conversion en devise étrangère et un risque de perte partielle du capital en cas de mouvement défavorable du FX."
+        },
+        {
+            "question": "Dans une option Knock-Out, quel est le risque principal pour un investisseur long ?",
+            "options": [
+                "Perte maximale égale au strike",
+                "Payoff réduit à zéro si la barrière est touchée",
+                "Volatilité implicite annulée par la barrière",
+                "Taux d'intérêt négatifs sur le sous-jacent"
+            ],
+            "answer": "Payoff réduit à zéro si la barrière est touchée",
+            "explanation": "Une option Knock-Out cesse d’exister si le sous-jacent touche une certaine barrière, annulant ainsi le gain potentiel."
+        },
+        {
             "question": "Quelle est la principale différence entre un Autocall et un Phoenix ?",
             "options": [
                 "Le Phoenix a une garantie de capital, l’Autocall non",
@@ -92,7 +158,11 @@ const questions = {
             ],
             "answer": "Participation, cap, barrière",
             "explanation": "L’ELN permet de capter une partie de la performance action tout en limitant le risque grâce à une barrière."
-        },
+        }
+    ],
+        
+    //  toute la partie venant de deepseek est en dessous mais la partie du haut est aussi importante 
+    moyen: [
         {
             "question": "Quel produit dépend du temps passé par un taux d’intérêt dans une certaine plage ?",
             "options": [
@@ -114,11 +184,7 @@ const questions = {
             ],
             "answer": "La dépendance aux trajectoires (path-dependent)",
             "explanation": "Le Snowball cumule les coupons selon un historique de marché, ce qui impose un modèle basé sur simulation (Monte Carlo)."
-        }
-    ],
-        
-    //  toute la partie venant de deepseek est en dessous mais la partie du haut est aussi importante 
-    moyen: [
+        },
         {
             "question": "Pourquoi un produit comme le Phoenix nécessite-t-il l'utilisation de la méthode Monte Carlo pour son pricing ?",
             "options": [
@@ -341,6 +407,127 @@ const questions = {
             ],
             "answer": "Car il repose sur une observation continue du taux à l’intérieur d’une plage",
             "explanation": "Plus la discrétisation est grossière, plus on risque de rater les moments où le taux est dans le range. Cela fausse l’accrual réel."
+        },
+        {
+            "question": "Quelle est la principale raison pour laquelle la méthode de Monte Carlo est préférée pour le pricing d’un Autocall ?",
+            "options": [
+                "Elle permet de simuler des taux d’intérêt négatifs",
+                "Elle est analytique et rapide pour les produits linéaires",
+                "Elle permet de capturer les dépendances complexes entre plusieurs dates d'observation et barrières",
+                "Elle garantit la convexité du prix du produit"
+            ],
+            "answer": "Elle permet de capturer les dépendances complexes entre plusieurs dates d'observation et barrières",
+            "explanation": "Les Autocalls incluent des mécanismes conditionnels multiples (dates d'observation, coupons, barrière de protection), rendant Monte Carlo adapté à la simulation de scénarios complexes."
+        },
+        {
+            "question": "Dans le cadre du pricing d’un Callable Bond, pourquoi l’arbre binomial est-il particulièrement adapté ?",
+            "options": [
+                "Parce qu’il est le plus précis pour les produits FX",
+                "Parce qu’il permet de modéliser la décision de rappel à chaque nœud en fonction des taux futurs",
+                "Parce qu’il simule des centaines de chemins de taux avec corrélations",
+                "Parce qu’il ne nécessite pas d’hypothèse de volatilité implicite"
+            ],
+            "answer": "Parce qu’il permet de modéliser la décision de rappel à chaque nœud en fonction des taux futurs",
+            "explanation": "L’arbre binomial permet de simuler les décisions optimales de rappel à chaque nœud, ce qui est essentiel pour le pricing d’un Callable Bond."
+        },
+        {
+            "question": "Le modèle de Garman-Kohlhagen est une extension du modèle Black-Scholes pour :",
+            "options": [
+                "Les options sur taux d’intérêt",
+                "Les options sur indices à dividendes fixes",
+                "Les dérivés sur FX avec différentiel de taux d’intérêt",
+                "Les caplets et floorlets sur CMS"
+            ],
+            "answer": "Les dérivés sur FX avec différentiel de taux d’intérêt",
+            "explanation": "Garman-Kohlhagen adapte le Black-Scholes aux marchés de change en intégrant les taux domestiques et étrangers pour le pricing des options FX."
+        },
+        {
+            "question": "Pourquoi utilise-t-on une interpolation dans le pricing d’un CMS Spread Note ?",
+            "options": [
+                "Pour estimer la volatilité locale à chaque maturité",
+                "Pour construire une courbe de taux zéro-coupon",
+                "Pour déduire le prix du swap spread entre deux CMS qui n’ont pas de cotation directe",
+                "Pour calibrer le modèle de volatilité stochastique"
+            ],
+            "answer": "Pour déduire le prix du swap spread entre deux CMS qui n’ont pas de cotation directe",
+            "explanation": "Les CMS Spread nécessitent d'interpoler entre les taux swap disponibles pour obtenir les composantes du spread (ex : 10Y-2Y)."
+        },
+        {
+            "question": "Qu’est-ce qui différencie une approche Monte Carlo temporelle d’un Monte Carlo standard ?",
+            "options": [
+                "Le Monte Carlo temporel utilise des courbes de taux implicites alors que le standard non",
+                "Le Monte Carlo temporel évalue les produits à dates continues, ce qui est crucial pour les accruals",
+                "Il est utilisé uniquement pour des produits obligataires",
+                "Il repose sur une approximation analytique de Black-Scholes"
+            ],
+            "answer": "Le Monte Carlo temporel évalue les produits à dates continues, ce qui est crucial pour les accruals",
+            "explanation": "Les produits comme les Range Accrual Notes nécessitent de mesurer la durée exacte passée dans une plage, ce qui nécessite une simulation fine dans le temps."
+        },
+        {
+            "question": "Pourquoi Black-Scholes est insuffisant pour pricer une Digital Option avec barrière excentrée dans le temps ?",
+            "options": [
+                "Il ne permet pas de modéliser les coupons fixes",
+                "Il suppose une activation immédiate des options",
+                "Il ne prend pas en compte la probabilité conditionnelle de toucher une barrière à une date future",
+                "Il est seulement valable pour les produits sur taux"
+            ],
+            "answer": "Il ne prend pas en compte la probabilité conditionnelle de toucher une barrière à une date future",
+            "explanation": "Le modèle Black-Scholes est adapté aux produits européens standards ; les barrières impliquent des probabilités conditionnelles dans le temps, mieux gérées par Monte Carlo ou arbres."
+        },
+        {
+            "question": "Dans le modèle de Merton pour le pricing d’options, quelle hypothèse clé différencie ce modèle du Black-Scholes standard ?",
+            "options": [
+                "La volatilité est stochastique",
+                "Les taux d’intérêt sont aléatoires",
+                "Les sauts de prix sont intégrés dans le processus de diffusion",
+                "Le sous-jacent suit un processus d'Ornstein-Uhlenbeck"
+            ],
+            "answer": "Les sauts de prix sont intégrés dans le processus de diffusion",
+            "explanation": "Le modèle de Merton (1976) étend Black-Scholes avec des sauts de type Poisson :\n\n**dS/S = (μ - λk)dt + σ dW + J dN**\n\noù *N(t)* est un processus de Poisson, *J* est le facteur de saut, et *λk* est la compensation du drift. Très utile pour les actifs à changements brusques (crashes, événements macroéco)."
+        },
+        {
+            "question": "Quelle est la subtilité principale à maîtriser lorsqu’on implémente le modèle de Heston pour le pricing d’une option ?",
+            "options": [
+                "Corriger la dérive du sous-jacent avec le facteur de saut",
+                "Ne jamais corréler le bruit du sous-jacent avec celui de la variance",
+                "Respecter la condition de Feller pour assurer la positivité de la variance",
+                "Utiliser uniquement des arbres binomiaux pour l’implémentation"
+            ],
+            "answer": "Respecter la condition de Feller pour assurer la positivité de la variance",
+            "explanation": "Le modèle de Heston introduit une variance stochastique avec le système :\n\n**dS = μS dt + √v S dW₁**\n**dv = κ(θ - v) dt + σ√v dW₂**\n\nLa condition de Feller : **2κθ > σ²** permet d’assurer que *v(t)* reste strictement positif. Ne pas la respecter peut rendre les simulations instables ou non réalistes."
+        },
+        {
+            "question": "Quel est le piège classique lors de l'utilisation du modèle de Garman-Kohlhagen pour le pricing d’options de change (FX) ?",
+            "options": [
+                "Oublier d’utiliser la courbe de taux domestique dans la dérive",
+                "Utiliser des volatilités de taux au lieu de FX",
+                "Négliger le taux étranger dans la valeur actualisée",
+                "Supposer une corrélation constante entre spot et forward"
+            ],
+            "answer": "Négliger le taux étranger dans la valeur actualisée",
+            "explanation": "Le modèle GK est :\n\n**C = S e^{-r_f T} N(d₁) - K e^{-r_d T} N(d₂)**\n\nIl inclut à la fois le taux domestique *r_d* et le taux étranger *r_f*. Oublier d’actualiser le spot avec *r_f* revient à sous-estimer la prime de change."
+        },
+        {
+            "question": "Pourquoi utilise-t-on parfois une méthode de Monte Carlo sous changement de numéraire ?",
+            "options": [
+                "Pour faciliter le calibrage aux CDS",
+                "Pour éviter les biais de discrétisation dans les arbres",
+                "Pour réduire la variance du simulateur dans un cadre multi-actif",
+                "Pour générer une grille de volatilité implicite ajustée"
+            ],
+            "answer": "Pour réduire la variance du simulateur dans un cadre multi-actif",
+            "explanation": "Changer de numéraire (ex : sous-jacent, zero-coupon) permet de mieux adapter la mesure de probabilité à l’actif de référence, ce qui réduit la variance de Monte Carlo et améliore la convergence."
+        },
+        {
+            "question": "Dans un arbre binomial pour option américaine, pourquoi doit-on vérifier la valeur intrinsèque à chaque nœud ?",
+            "options": [
+                "Pour intégrer les dividendes dans le modèle",
+                "Pour appliquer l’hypothèse de martingale",
+                "Pour déterminer si l’exercice anticipé est optimal",
+                "Pour garantir la symétrie de l’arbre"
+            ],
+            "answer": "Pour déterminer si l’exercice anticipé est optimal",
+            "explanation": "Dans une option américaine, le porteur peut exercer à tout moment. À chaque nœud, on compare la valeur intrinsèque à la valeur actualisée du futur :\n**max(V_futur actualisé, valeur intrinsèque)**."
         }
     ]
 };
