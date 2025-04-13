@@ -6,6 +6,61 @@ import "./QCMStyles.css";
 const questions = {
     basic: [
         {
+            "question": "Lequel des instruments suivants n'est pas nécessairement un produit dérivé ?",
+            "options": [
+                "Swap de taux",
+                "Option sur action",
+                "Obligation convertible",
+                "Contrat à terme (futures)"
+            ],
+            "answer": "Obligation convertible",
+            "explanation": "Une obligation convertible est un produit hybride (obligation + option), mais ce n’est pas un produit dérivé pur. Les autres sont des dérivés classiques."
+        },
+        {
+            "question": "Une option européenne donne à son détenteur :",
+            "options": [
+                "Le droit d’acheter ou vendre l’actif sous-jacent à tout moment avant l’échéance",
+                "L’obligation d’acheter l’actif sous-jacent à l’échéance",
+                "Le droit d’exercer uniquement à la date d’échéance",
+                "Un droit automatique d’exercice si l’option est dans la monnaie"
+            ],
+            "answer": "Le droit d’exercer uniquement à la date d’échéance",
+            "explanation": "Les options européennes ne peuvent être exercées qu’à la date d’échéance, contrairement aux options américaines."
+        },
+        {
+            "question": "Lequel des énoncés est vrai concernant un produit structuré de type Autocall ?",
+            "options": [
+                "Il garantit le capital à l’échéance dans tous les cas",
+                "Il est composé uniquement d’une obligation zéro coupon",
+                "Il peut rembourser anticipativement si certaines conditions sont remplies",
+                "Il donne à l’investisseur le droit d’acheter un actif sous-jacent à prix réduit"
+            ],
+            "answer": "Il peut rembourser anticipativement si certaines conditions sont remplies",
+            "explanation": "Les Autocalls remboursent de façon anticipée si certains seuils de performance du sous-jacent sont atteints à des dates de constatation."
+        },
+        {
+            "question": "Les produits dérivés peuvent être utilisés pour :",
+            "options": [
+                "Réduire le risque d’une position",
+                "Accroître artificiellement la performance",
+                "Spéculer sur la volatilité",
+                "Toutes les réponses précédentes"
+            ],
+            "answer": "Toutes les réponses précédentes",
+            "explanation": "Les dérivés ont plusieurs usages : couverture, spéculation, effet de levier, arbitrage, etc."
+        },
+        {
+            "question": "Un investisseur achète une option d’achat (call) sur le CAC 40 avec un strike de 7 000 points. À l’échéance, le CAC 40 est à 7 300. Quelle est la valeur intrinsèque de l’option ?",
+            "options": [
+                "0",
+                "300",
+                "7 300",
+                "Impossible à déterminer sans la prime"
+            ],
+            "answer": "300",
+            "explanation": "Valeur intrinsèque = prix du sous-jacent – strike = 7300 – 7000 = 300. La prime n’entre pas dans ce calcul."
+        },
+        {
             "question": "Le produit CMS Spread Note est principalement sensible à :",
             "options": [
                 "La courbe des taux forward FX",
