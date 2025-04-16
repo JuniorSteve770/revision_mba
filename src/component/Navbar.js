@@ -15,7 +15,7 @@ const Navbar = () => {
                     Trading D1 Cours
                     </NavLink>
                     <NavLink to="/blogs" activeStyle>
-                    QCM D1
+                    QCM PS
                     </NavLink>
                     <NavLink to="/sign-up" activeStyle>
                         OOP

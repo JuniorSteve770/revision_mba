@@ -4,616 +4,844 @@ import "./QCMStyles.css";
 const questions = {
     basic: [
         {
-            question: "Qu'est-ce qu'un repurchase agreement (repo) ?",
-            options: [
-                "Un prêt non garanti à court terme",
-                "Une vente de titres avec engagement de les racheter à un prix plus élevé",
-                "Une option d'achat sur des titres",
-                "Un swap de taux d'intérêt"
+            "question": "Qu'est-ce qu'un produit structuré ?",
+            "options": [
+                "Un produit financier coté en bourse",
+                "Un produit complexe alliant performance et protection du capital",
+                "Un produit réservé aux investisseurs institutionnels",
+                "Un produit sans risque garanti par l'État"
             ],
-            answer: "Une vente de titres avec engagement de les racheter à un prix plus élevé",
-            explanation: "Un repo est une vente de titres avec engagement de rachat à un prix plus élevé."
+            "answer": "Un produit complexe alliant performance et protection du capital",
+            "explanation": "Les produits structurés sont des instruments financiers non côtés, complexes, qui combinent recherche de performance et protection du capital."
         },
         {
-            question: "Quel est le rôle du collatéral dans un repo ?",
-            options: [
-                "Il sert à garantir le remboursement du prêt",
-                "Il augmente le risque de contrepartie",
-                "Il est optionnel dans les transactions repo",
-                "Il est utilisé pour spéculer sur les marchés"
+            "question": "Qui crée les produits structurés ?",
+            "options": [
+                "Les entreprises cotées en bourse",
+                "Les banques et compagnies d'assurance",
+                "Les fonds de pension",
+                "Les gouvernements"
             ],
-            answer: "Il sert à garantir le remboursement du prêt",
-            explanation: "Le collatéral sert à réduire le risque de contrepartie en garantissant le remboursement."
+            "answer": "Les banques et compagnies d'assurance",
+            "explanation": "Les produits structurés sont créés par les banques ou les compagnies d'assurance."
         },
         {
-            question: "Qui est le 'cash taker' dans une transaction repo ?",
-            options: [
-                "La partie qui fournit les titres et reçoit du cash",
-                "La partie qui fournit du cash et reçoit les titres",
-                "La banque centrale",
-                "Un intermédiaire financier"
+            "question": "Sur quoi repose la performance d'un produit structuré ?",
+            "options": [
+                "Sur les taux d'intérêt directeurs",
+                "Sur un sous-jacent (action, indice, etc.)",
+                "Sur la politique monétaire",
+                "Sur les résultats de l'émetteur"
             ],
-            answer: "La partie qui fournit les titres et reçoit du cash",
-            explanation: "Le cash taker est la partie qui échange des titres contre du cash."
+            "answer": "Sur un sous-jacent (action, indice, etc.)",
+            "explanation": "La performance dépend de l'évolution d'un sous-jacent qui peut être une action, un panier d'actions ou un indice boursier."
         },
         {
-            question: "Pourquoi les repos sont-ils classés comme des produits Delta 1 ?",
-            options: [
-                "Parce qu'ils ont un effet de levier non linéaire",
-                "Parce qu'ils suivent linéairement la valeur des actifs sous-jacents",
-                "Parce qu'ils sont utilisés uniquement pour les options",
-                "Parce qu'ils sont sans risque"
+            "question": "Quels sont les supports permettant d'investir dans des produits structurés ?",
+            "options": [
+                "Uniquement un compte titres",
+                "Assurance vie, PEA, compte titres ou plan d'épargne retraite",
+                "Uniquement un PEA",
+                "Un compte courant bancaire"
             ],
-            answer: "Parce qu'ils suivent linéairement la valeur des actifs sous-jacents",
-            explanation: "Les repos sont des produits Delta 1 car leur valeur évolue directement avec celle des actifs sous-jacents."
+            "answer": "Assurance vie, PEA, compte titres ou plan d'épargne retraite",
+            "explanation": "Il est possible d'investir via une assurance vie, un PEA, un compte titres ou un plan d'épargne retraite."
         },
         {
-            question: "Quel est l'objectif principal d'un repo pour une banque ?",
-            options: [
-                "Spéculer sur les marchés",
-                "Gérer sa trésorerie à court terme",
-                "Investir à long terme",
-                "Émettre des obligations"
+            "question": "Quel est l'objectif principal des produits structurés ?",
+            "options": [
+                "Garantir un rendement fixe",
+                "Obtenir un rendement optimum en garantissant tout ou partie du capital",
+                "Éviter toute fiscalité",
+                "Spéculer à court terme"
             ],
-            answer: "Gérer sa trésorerie à court terme",
-            explanation: "Les banques utilisent les repos principalement pour la gestion de liquidité."
-        },
-
-        {
-            question: "Comment calcule-t-on le montant total à rembourser dans un repo ?",
-            options: [
-                "Montant emprunté × (1 + Taux repo × Jours/360)",
-                "Montant emprunté × Taux repo",
-                "Montant emprunté + (Taux repo × Jours)",
-                "Montant emprunté / (1 + Taux repo)"
-            ],
-            answer: "Montant emprunté × (1 + Taux repo × Jours/360)",
-            explanation: "Cette formule prend en compte l'intérêt calculé sur la durée du repo."
+            "answer": "Obtenir un rendement optimum en garantissant tout ou partie du capital",
+            "explanation": "Les produits structurés ont pour objectif d'obtenir un rendement optimum en garantissant le capital investi (en totalité ou en partie)."
         },
         {
-            question: "Quel est le risque principal pour le 'cash provider' dans un repo ?",
-            options: [
-                "Le risque de taux d'intérêt",
-                "Le risque de contrepartie",
-                "Le risque de change",
-                "Le risque de liquidité"
+            "question": "Quelle est la forme réglementaire courante des produits structurés ?",
+            "options": [
+                "Fonds commun de placement (FCP)",
+                "Société anonyme",
+                "Fonds monétaire",
+                "ETF"
             ],
-            answer: "Le risque de contrepartie",
-            explanation: "Le risque de contrepartie est le principal risque pour le prêteur de cash."
+            "answer": "Fonds commun de placement (FCP)",
+            "explanation": "Réglementairement, ces véhicules d'investissement prennent souvent la forme d'un Fonds commun de placement (FCP)."
         },
         {
-            question: "Quel est l'avantage d'un repo tripartite par rapport à un repo standard ?",
-            options: [
-                "Il est moins sécurisé",
-                "Une tierce partie gère le collatéral et les flux financiers",
-                "Il est plus risqué pour les deux parties",
-                "Il n'implique pas de collatéral"
+            "question": "Quels frais sont associés aux produits structurés ?",
+            "options": [
+                "Uniquement des frais de gestion",
+                "Frais d'entrée, frais de cession et frais de gestion",
+                "Aucun frais",
+                "Uniquement des frais de sortie"
             ],
-            answer: "Une tierce partie gère le collatéral et les flux financiers",
-            explanation: "Un repo tripartite améliore la sécurité des transactions."
+            "answer": "Frais d'entrée, frais de cession et frais de gestion",
+            "explanation": "La souscription entraîne des frais d'entrée (1 à 3%), des frais de cession en cas de revente et des frais de gestion annuels (environ 2%)."
         },
         {
-            question: "Comment les banques centrales utilisent-elles les repos ?",
-            options: [
-                "Pour spéculer sur les marchés",
-                "Pour gérer la liquidité du marché monétaire",
-                "Pour émettre des obligations",
-                "Pour financer des projets à long terme"
+            "question": "Comment est déterminé le rendement d'un produit structuré ?",
+            "options": [
+                "Par les performances passées de l'émetteur",
+                "Selon une formule mathématique connue lors de la souscription",
+                "Par décision discrétionnaire de l'émetteur",
+                "En fonction des taux d'intérêt du marché"
             ],
-            answer: "Pour gérer la liquidité du marché monétaire",
-            explanation: "Les banques centrales utilisent les repos pour ajuster la liquidité du marché monétaire."
+            "answer": "Selon une formule mathématique connue lors de la souscription",
+            "explanation": "Le rendement du produit est défini selon une formule mathématique connue lors de la souscription."
         },
         {
-            question: "Quel est l'impact d'une baisse de la valeur des titres sous-jacents pendant la durée d'un repo ?",
-            options: [
-                "Le cash provider doit fournir un appel de marge",
-                "Le cash taker doit fournir un appel de marge",
-                "Le repo est annulé automatiquement",
-                "Aucun impact, car le repo est sans risque"
+            "question": "Qu'est-ce qu'une barrière de protection dans un produit structuré ?",
+            "options": [
+                "Une limite empêchant toute perte en capital",
+                "Un seuil limitant la perte en capital en contrepartie d'un gain bridé",
+                "Une garantie de performance minimale",
+                "Un plafond de rendement"
             ],
-            answer: "Le cash taker doit fournir un appel de marge",
-            explanation: "Si la valeur du collatéral baisse, le cash taker doit fournir un appel de marge."
+            "answer": "Un seuil limitant la perte en capital en contrepartie d'un gain bridé",
+            "explanation": "Certains produits ont une barrière de protection limitant la perte en capital. En contrepartie de cette protection partielle, le potentiel de gain est bridé."
         },
         {
-            question: "Quel est l'objectif d'un reverse repo pour une institution financière ?",
-            options: [
-                "Emprunter des titres pour vendre à découvert",
-                "Prêter du cash en échange de titres",
-                "Spéculer sur les taux d'intérêt",
-                "Investir à long terme"
+            "question": "Quelle est la durée typique d'un produit structuré ?",
+            "options": [
+                "1 an maximum",
+                "Entre 2 et 10 ans",
+                "Plus de 20 ans",
+                "Variable sans durée fixe"
             ],
-            answer: "Prêter du cash en échange de titres",
-            explanation: "Un reverse repo permet à une institution de prêter du cash en échange de titres."
+            "answer": "Entre 2 et 10 ans",
+            "explanation": "Dans tous les cas, le capital est restitué à l'investisseur au terme d'une période fixée dès le départ (entre 2 et 10 ans)."
         },
         {
-            question: "Quel est le rôle des repos dans l'arbitrage sur les taux d'intérêt ?",
-            options: [
-                "Ils permettent de profiter d'écarts entre les rendements des obligations et les taux repo",
-                "Ils augmentent le risque de contrepartie",
-                "Ils sont utilisés uniquement pour les swaps de taux d'intérêt",
-                "Ils n'ont aucun lien avec l'arbitrage"
+            "question": "Quels sont les composants typiques d'un produit structuré ?",
+            "options": [
+                "Actions uniquement",
+                "Obligations de premier rang, obligations risquées et swaps",
+                "Matières premières et devises",
+                "Immobilier et obligations"
             ],
-            answer: "Ils permettent de profiter d'écarts entre les rendements des obligations et les taux repo",
-            explanation: "Les repos permettent de profiter des écarts de taux grâce à leur structure de financement à court terme."
+            "answer": "Obligations de premier rang, obligations risquées et swaps",
+            "explanation": "Beaucoup de produits structurés se composent d'une obligation de premier rang, d'obligations plus risquées et de swaps."
         },
         {
-            question: "Quel est l'impact des repos sur les ratios réglementaires des banques (Bâle III) ?",
-            options: [
-                "Ils augmentent les exigences de capital",
-                "Ils réduisent les exigences de capital en optimisant le bilan",
-                "Ils n'ont aucun impact sur les ratios",
-                "Ils augmentent le risque de liquidité"
+            "question": "Qu'est-ce que le sous-jacent d'un produit structuré ?",
+            "options": [
+                "La devise de référence du produit",
+                "L'actif financier (action, indice) dont dépend la performance",
+                "L'émetteur du produit",
+                "La garantie du capital"
             ],
-            answer: "Ils réduisent les exigences de capital en optimisant le bilan",
-            explanation: "Les repos permettent aux banques d'optimiser leur bilan et de réduire leurs exigences de capital."
+            "answer": "L'actif financier (action, indice) dont dépend la performance",
+            "explanation": "Le sous-jacent définit l'indice que va suivre le produit structuré (action, obligation, indice boursier)."
         },
         {
-            question: "Quel est le principal avantage d'un repo par rapport à un prêt traditionnel ?",
-            options: [
-                "Il est plus risqué",
-                "Il est collatéralisé, réduisant ainsi le risque de défaut",
-                "Il n'implique pas de taux d'intérêt",
-                "Il est utilisé uniquement pour les particuliers"
+            "question": "Qu'est-ce qu'un coupon dans un produit structuré ?",
+            "options": [
+                "Une réduction sur les frais de gestion",
+                "Le rendement du produit versé périodiquement",
+                "Un bonus de souscription",
+                "Une pénalité en cas de sortie anticipée"
             ],
-            answer: "Il est collatéralisé, réduisant ainsi le risque de défaut",
-            explanation: "Le repo est sécurisé par des titres, ce qui réduit le risque de défaut."
+            "answer": "Le rendement du produit versé périodiquement",
+            "explanation": "Les coupons représentent le rendement d'un produit structuré, versé mensuellement, trimestriellement, annuellement ou à terme."
+        },
+        {
+            "question": "Qu'est-ce qu'une date de constatation ?",
+            "options": [
+                "La date de souscription du produit",
+                "Une date fixée périodiquement pour évaluer la performance",
+                "La date de publication des résultats de l'émetteur",
+                "La date de paiement des impôts"
+            ],
+            "answer": "Une date fixée périodiquement pour évaluer la performance",
+            "explanation": "Plusieurs dates durant la vie du produit sont fixées périodiquement pour constater l'évolution et la performance du produit."
+        },
+        {
+            "question": "Que se passe-t-il si le sous-jacent dépasse son niveau initial à une date de constatation ?",
+            "options": [
+                "Le produit est automatiquement clôturé avec remboursement du capital et des coupons",
+                "Le produit est prolongé automatiquement",
+                "Les frais de gestion sont réduits",
+                "Le sous-jacent est changé"
+            ],
+            "answer": "Le produit est automatiquement clôturé avec remboursement du capital et des coupons",
+            "explanation": "Si le sous-jacent surperforme à une date de constatation, le fonds est automatiquement rappelé et l'investisseur récupère son capital plus les coupons."
+        },
+        {
+            "question": "Quelle est la différence entre produits à capital garanti et protégé ?",
+            "options": [
+                "Aucune différence, les termes sont synonymes",
+                "Les produits à capital garanti protègent intégralement le capital, les protégés partiellement",
+                "Les produits à capital protégé offrent un rendement plus élevé",
+                "Seuls les produits à capital garanti sont éligibles au PEA"
+            ],
+            "answer": "Les produits à capital garanti protègent intégralement le capital, les protégés partiellement",
+            "explanation": "Les fonds à capital garanti assurent de récupérer la mise nette à l'échéance, tandis que les fonds à capital protégé garantissent tout ou partie du capital."
+        },
+        {
+            "question": "Quel est le principal risque des produits structurés ?",
+            "options": [
+                "Risque de change",
+                "Risque de liquidité et risque de défaut de l'émetteur",
+                "Risque politique",
+                "Risque inflationniste"
+            ],
+            "answer": "Risque de liquidité et risque de défaut de l'émetteur",
+            "explanation": "Les principaux risques sont la liquidité (difficulté de sortie anticipée) et le défaut de l'émetteur (faillite de la banque ou compagnie d'assurance émettrice)."
+        },
+        {
+            "question": "Qu'est-ce que le DICI ?",
+            "options": [
+                "Un indice boursier",
+                "Le Document d'Information Clé de l'Investisseur",
+                "Un type de produit structuré",
+                "Une autorité de régulation"
+            ],
+            "answer": "Le Document d'Information Clé de l'Investisseur",
+            "explanation": "Le DICI contient toutes les informations nécessaires à l'analyse du fonds et doit être remis à l'investisseur."
+        },
+        {
+            "question": "Que se passe-t-il si l'indice sous-jacent chute de 50% avec une barrière de protection à 30% ?",
+            "options": [
+                "L'investisseur récupère 70% de son capital",
+                "L'investisseur récupère 50% de son capital",
+                "L'investisseur récupère 100% de son capital",
+                "L'investisseur perd tout son capital"
+            ],
+            "answer": "L'investisseur récupère 50% de son capital",
+            "explanation": "Si l'indice est en dessous de la barrière de protection (ici -50% vs -30%), l'investisseur subit une perte équivalente à la baisse de l'indice."
+        },
+        {
+            "question": "Quelle est la fiscalité des produits structurés ?",
+            "options": [
+                "Toujours imposée au taux forfaitaire de 30%",
+                "Dépend du support utilisé (PEA, assurance vie, etc.)",
+                "Exonérée d'impôts",
+                "Imposée uniquement sur les plus-values"
+            ],
+            "answer": "Dépend du support utilisé (PEA, assurance vie, etc.)",
+            "explanation": "La fiscalité dépend du support (PEA, assurance-vie ou compte-titres) et suit la fiscalité spécifique de ce support."
+        },
+        {
+            "question": "Qu'est-ce qu'un produit Autocallable ?",
+            "options": [
+                "Un produit remboursé automatiquement si certains seuils sont atteints",
+                "Un produit sans date d'échéance",
+                "Un produit à capital non garanti",
+                "Un produit réservé aux professionnels"
+            ],
+            "answer": "Un produit remboursé automatiquement si certains seuils sont atteints",
+            "explanation": "Les Autocalls remboursent de façon anticipée si certains seuils de performance du sous-jacent sont atteints à des dates de constatation."
+        },
+        {
+            "question": "Pourquoi investir dans des produits structurés selon le document ?",
+            "options": [
+                "Pour garantir un rendement fixe supérieur au marché",
+                "Pour ajuster le couple rendement/risque et diversifier son allocation",
+                "Pour éviter toute fiscalité",
+                "Pour spéculer à très court terme"
+            ],
+            "answer": "Pour ajuster le couple rendement/risque et diversifier son allocation",
+            "explanation": "L'investissement permet d'ajuster rendement et risque selon ses objectifs et de diversifier son allocation avec des scénarios connus à l'avance."
+        },
+        {
+            "question": "Quel est l'avantage fiscal des produits structurés détenus en assurance vie ?",
+            "options": [
+                "Exonération totale d'impôts",
+                "Fiscalité avantageuse après 8 ans de détention",
+                "Imposition uniquement sur les coupons",
+                "Aucun avantage particulier"
+            ],
+            "answer": "Fiscalité avantageuse après 8 ans de détention",
+            "explanation": "Détenus via une assurance vie, ils bénéficient de la fiscalité avantageuse de ce support après 8 ans de détention."
+        },
+        {
+            "question": "Que se passe-t-il à l'échéance d'un produit à capital garanti si le sous-jacent a performé ?",
+            "options": [
+                "L'investisseur récupère uniquement son capital initial",
+                "L'investisseur récupère son capital majoré du rendement prévu",
+                "Le produit est automatiquement reconduit",
+                "L'investisseur perd une partie de son capital"
+            ],
+            "answer": "L'investisseur récupère son capital majoré du rendement prévu",
+            "explanation": "Si le sous-jacent égale ou dépasse le niveau de constatation initial à l'échéance, l'investisseur perçoit son capital initial majoré du gain prévu."
+        },
+        {
+            "question": "Quelle est la particularité des produits à effet de levier ?",
+            "options": [
+                "Ils offrent une exposition supérieure à 100% au sous-jacent",
+                "Ils garantissent un rendement minimum",
+                "Ils sont sans risque",
+                "Ils sont réservés aux investisseurs prudents"
+            ],
+            "answer": "Ils offrent une exposition supérieure à 100% au sous-jacent",
+            "explanation": "Les produits à effet de levier permettent d'avoir une exposition du capital supérieure à 100%."
+        },
+        {
+            "question": "Quel conseil le document donne-t-il avant de souscrire à un produit structuré ?",
+            "options": [
+                "Investir tout son capital dans un seul produit",
+                "Se rapprocher d'un organisme spécialisé et bien analyser le DICI",
+                "Ignorer les frais associés",
+                "Choisir uniquement des produits à très long terme"
+            ],
+            "answer": "Se rapprocher d'un organisme spécialisé et bien analyser le DICI",
+            "explanation": "Il est recommandé de se rapprocher d'un organisme spécialisé et d'analyser soigneusement le DICI avant de souscrire."
+        },
+        {
+            "question": "Quelle est la principale caractéristique des produits de participation ?",
+            "options": [
+                "Ils sont investis à 100% sur un même sous-jacent",
+                "Ils garantissent le capital à 100%",
+                "Ils offrent un rendement fixe",
+                "Ils sont sans risque"
+            ],
+            "answer": "Ils sont investis à 100% sur un même sous-jacent",
+            "explanation": "Les produits de participation sont investis 100% sur un même sous-jacent et participent à sa hausse comme à sa baisse."
+        },
+        {
+            "question": "Que signifie le terme 'strike' dans un produit structuré ?",
+            "options": [
+                "Le niveau initial de référence du sous-jacent",
+                "La date d'échéance du produit",
+                "Le taux du coupon",
+                "Le montant des frais de gestion"
+            ],
+            "answer": "Le niveau initial de référence du sous-jacent",
+            "explanation": "Le strike est le niveau initial de l'actif sous-jacent au moment du démarrage du produit."
+        },
+        {
+            "question": "Quelle est la durée minimale typique d'un produit structuré ?",
+            "options": [
+                "1 mois",
+                "6 mois",
+                "2 ans",
+                "5 ans"
+            ],
+            "answer": "2 ans",
+            "explanation": "La durée typique d'un produit structuré est généralement entre 2 et 10 ans."
+        },
+        {
+            "question": "Quel est l'inconvénient majeur d'une sortie anticipée d'un produit structuré ?",
+            "options": [
+                "Des pénalités et un risque de perte en capital",
+                "Une imposition plus favorable",
+                "Un remboursement du capital garanti",
+                "Une conversion automatique en actions"
+            ],
+            "answer": "Des pénalités et un risque de perte en capital",
+            "explanation": "Une sortie anticipée entraîne des pénalités et peut conduire à une perte en capital, les fonds étant prévus pour aller jusqu'à l'échéance."
+        },
+        {
+            "question": "Quelle est la composition typique d'un produit structuré autocallable ?",
+            "options": [
+                "Une obligation zéro-coupon et une option",
+                "Un panier d'actions uniquement",
+                "Des devises étrangères",
+                "Des matières premières"
+            ],
+            "answer": "Une obligation zéro-coupon et une option",
+            "explanation": "Un autocallable combine typiquement une obligation zéro-coupon (pour la protection du capital) et une option (pour la performance)."
+        },
+        {
+            "question": "Quelle est la principale différence entre un produit structuré et un fonds traditionnel ?",
+            "options": [
+                "Les produits structurés sont toujours plus risqués",
+                "Les produits structurés combinent plusieurs instruments financiers avec une formule de rendement prédéfinie",
+                "Les fonds traditionnels offrent une meilleure performance",
+                "Il n'y a pas de différence"
+            ],
+            "answer": "Les produits structurés combinent plusieurs instruments financiers avec une formule de rendement prédéfinie",
+            "explanation": "Les produits structurés sont des combinaisons complexes d'instruments financiers avec une formule mathématique définissant le rendement, contrairement aux fonds traditionnels."
         }
     ],
     moyen: [
         {
-            question: "Quel est l'objectif d'un repo ouvert (open repo) ?",
-            options: [
-                "Il a une durée fixe et ne peut pas être prolongé",
-                "Il n'a pas de date d'échéance fixe et peut être prolongé indéfiniment",
-                "Il est utilisé uniquement pour les opérations de banques centrales",
-                "Il est sans collatéral"
+            "question": "Que garantit un produit à capital garanti à l'échéance ?",
+            "options": [
+                "Un rendement minimum de 5%",
+                "Le capital investi net de frais",
+                "Une performance supérieure au marché",
+                "Aucune garantie"
             ],
-            answer: "Il n'a pas de date d'échéance fixe et peut être prolongé indéfiniment",
-            explanation: "Un repo ouvert permet aux parties de reconduire l'accord tant qu'elles le souhaitent."
+            "answer": "Le capital investi net de frais",
+            "explanation": "Les fonds à capital garanti assurent à l'épargnant de récupérer sa mise nette de frais à l'échéance."
         },
         {
-            question: "Quelle est la principale différence entre un repo et un prêt-emprunt de titres ?",
-            options: [
-                "Le repo est utilisé pour lever du financement, tandis que le prêt-emprunt de titres est utilisé pour emprunter des titres.",
-                "Le repo est toujours plus risqué que le prêt-emprunt de titres.",
-                "Le repo n'implique pas de collatéral, contrairement au prêt-emprunt de titres.",
-                "Le prêt-emprunt de titres est utilisé uniquement par les banques centrales."
+            "question": "Quel type de produit structuré convient à un investisseur prudent ?",
+            "options": [
+                "Produit à effet de levier",
+                "Produit à capital garanti",
+                "Produit de participation",
+                "Produit spéculatif"
             ],
-            answer: "Le repo est utilisé pour lever du financement, tandis que le prêt-emprunt de titres est utilisé pour emprunter des titres.",
-            explanation: "Le repo est une opération de financement à court terme, tandis que le prêt-emprunt de titres sert à emprunter des titres pour des opérations de marché."
+            "answer": "Produit à capital garanti",
+            "explanation": "Les produits à capital garanti, avec leur protection intégrale du capital, conviennent aux investisseurs prudents."
         },
         {
-            question: "Quel est l'objectif principal d'un prêt-emprunt de titres ?",
-            options: [
-                "Lever du financement à court terme.",
-                "Emprunter des titres pour du short-selling ou honorer des obligations de livraison.",
-                "Spéculer sur les taux d'intérêt.",
-                "Optimiser les ratios réglementaires des banques."
+            "question": "Quel est l'avantage des produits structurés dans un contexte de marché volatile ?",
+            "options": [
+                "Ils éliminent tout risque",
+                "La barrière de protection peut limiter les pertes",
+                "Ils offrent des rendements garantis très élevés",
+                "Ils permettent de spéculer sur la volatilité"
             ],
-            answer: "Emprunter des titres pour du short-selling ou honorer des obligations de livraison.",
-            explanation: "Le prêt-emprunt de titres est principalement utilisé pour emprunter des titres, notamment pour des stratégies de vente à découvert."
+            "answer": "La barrière de protection peut limiter les pertes",
+            "explanation": "Dans un contexte volatile, la barrière de protection des produits structurés peut sécuriser l'investisseur en limitant les risques de perte."
         },
         {
-            question: "Comment le prix d'un repo est-il déterminé ?",
-            options: [
-                "Par le taux de prêt de titres (securities lending fee).",
-                "Par le taux repo, qui dépend de l'offre et de la demande sur le marché monétaire.",
-                "Par la valeur nominale des titres sous-jacents.",
-                "Par le taux interbancaire uniquement."
+            "question": "Quelle est la particularité des produits 'autocali' ?",
+            "options": [
+                "Ils remboursent automatiquement le capital et une plus-value si le sous-jacent est positif à une date précise",
+                "Ils n'ont pas de date d'échéance",
+                "Ils sont garantis par l'État",
+                "Ils offrent un rendement fixe quel que soit le marché"
             ],
-            answer: "Par le taux repo, qui dépend de l'offre et de la demande sur le marché monétaire.",
-            explanation: "Le taux repo est influencé par les conditions du marché monétaire et les taux sans risque."
+            "answer": "Ils remboursent automatiquement le capital et une plus-value si le sous-jacent est positif à une date précise",
+            "explanation": "Les produits 'autocali' remboursent par anticipation le capital majoré d'une plus-value si la performance du sous-jacent est positive ou nulle à une date précise."
         },
         {
-            question: "Quel type d'arbitrage est possible avec un repo ?",
-            options: [
-                "Arbitrage entre le coût d'emprunt du titre et la valeur de son utilisation.",
-                "Arbitrage entre le taux repo et les taux de marché (ex. emprunter via repo si le taux est inférieur au taux interbancaire).",
-                "Arbitrage sur les spreads de crédit.",
-                "Arbitrage sur les devises étrangères."
+            "question": "Quel est le risque principal si l'émetteur d'un produit structuré fait faillite ?",
+            "options": [
+                "Le produit devient plus performant",
+                "L'investisseur peut perdre tout ou partie de son capital",
+                "Le produit est automatiquement transféré à un autre émetteur",
+                "Aucun risque, le capital est garanti par l'État"
             ],
-            answer: "Arbitrage entre le taux repo et les taux de marché (ex. emprunter via repo si le taux est inférieur au taux interbancaire).",
-            explanation: "Les acteurs peuvent profiter des écarts entre le taux repo et d'autres taux de marché pour réaliser des arbitrages."
+            "answer": "L'investisseur peut perdre tout ou partie de son capital",
+            "explanation": "En cas de défaut de l'émetteur (banque ou compagnie d'assurance), l'investisseur peut subir une perte totale ou partielle de son capital."
         },
         {
-            question: "Quel est le principal avantage d'un prêt-emprunt de titres par rapport à un repo ?",
-            options: [
-                "Il permet de lever du financement à court terme.",
-                "Il permet d'emprunter des titres pour des stratégies de marché comme le short-selling.",
-                "Il est toujours moins risqué qu'un repo.",
-                "Il n'implique pas de collatéral."
+            "question": "Quelle est la meilleure stratégie avec les produits structurés selon le document ?",
+            "options": [
+                "Concentrer tout son portefeuille sur un seul produit",
+                "Les utiliser comme outil de diversification",
+                "Les éviter complètement",
+                "Les utiliser uniquement pour du très court terme"
             ],
-            answer: "Il permet d'emprunter des titres pour des stratégies de marché comme le short-selling.",
-            explanation: "Le prêt-emprunt de titres est conçu pour permettre l'emprunt de titres, notamment pour des opérations de vente à découvert."
+            "answer": "Les utiliser comme outil de diversification",
+            "explanation": "Le document recommande d'intégrer les produits structurés comme outil de diversification dans une allocation d'actifs plus large."
         },
         {
-            question: "Quel est le rôle du collatéral dans un prêt-emprunt de titres ?",
-            options: [
-                "Il garantit le remboursement du prêt.",
-                "Il sert de garantie pour l'emprunt de titres.",
-                "Il est optionnel dans cette transaction.",
-                "Il est utilisé pour spéculer sur les marchés."
+            "question": "Que signifie FCP dans le contexte des produits structurés ?",
+            "options": [
+                "Fonds Commun de Placement",
+                "Fonds de Capital Protection",
+                "Fonds Coté en Bourse",
+                "Fonds à Coupon Protégé"
             ],
-            answer: "Il sert de garantie pour l'emprunt de titres.",
-            explanation: "Dans un prêt-emprunt de titres, le collatéral est fourni par l'emprunteur pour garantir le retour des titres prêtés."
+            "answer": "Fonds Commun de Placement",
+            "explanation": "FCP signifie Fonds Commun de Placement, une forme réglementaire courante pour les produits structurés."
         },
         {
-            question: "Quel est l'objectif principal d'un repo pour une institution financière ?",
-            options: [
-                "Emprunter des titres pour du short-selling.",
-                "Lever du financement à court terme en utilisant des titres comme garantie.",
-                "Optimiser les ratios de liquidité.",
-                "Spéculer sur les taux d'intérêt."
+            "question": "Quelle est la fréquence typique des dates de constatation ?",
+            "options": [
+                "Quotidienne",
+                "Hebdomadaire",
+                "Annuelle",
+                "Tous les 5 ans"
             ],
-            answer: "Lever du financement à court terme en utilisant des titres comme garantie.",
-            explanation: "Le repo est principalement utilisé pour obtenir du financement à court terme en échange de titres."
+            "answer": "Annuelle",
+            "explanation": "Les dates de constatation sont généralement fixées annuellement pour évaluer la performance du produit."
         },
         {
-            question: "Quel est le principal risque pour le prêteur dans un prêt-emprunt de titres ?",
-            options: [
-                "Le risque de taux d'intérêt.",
-                "Le risque de contrepartie (défaut de l'emprunteur).",
-                "Le risque de change.",
-                "Le risque de liquidité."
+            "question": "Quel type de produit structuré est le plus risqué ?",
+            "options": [
+                "Produit à capital garanti",
+                "Produit à effet de levier",
+                "Produit à capital protégé",
+                "Produit de rendement"
             ],
-            answer: "Le risque de contrepartie (défaut de l'emprunteur).",
-            explanation: "Le prêteur de titres est exposé au risque que l'emprunteur ne restitue pas les titres ou ne fournisse pas le collatéral convenu."
+            "answer": "Produit à effet de levier",
+            "explanation": "Les produits à effet de levier, avec leur exposition supérieure à 100%, présentent le risque le plus élevé."
         },
         {
-            question: "Quel est l'avantage d'un repo par rapport à un prêt traditionnel ?",
-            options: [
-                "Il est plus risqué.",
-                "Il est collatéralisé, réduisant ainsi le risque de défaut.",
-                "Il n'implique pas de taux d'intérêt.",
-                "Il est utilisé uniquement pour les particuliers."
+            "question": "Que se passe-t-il si le sous-jacent d'un produit à capital protégé chute de 15% (avec une protection à 10%) ?",
+            "options": [
+                "L'investisseur récupère 100% de son capital",
+                "L'investisseur récupère 90% de son capital",
+                "L'investisseur récupère 85% de son capital",
+                "L'investisseur perd tout son capital"
             ],
-            answer: "Il est collatéralisé, réduisant ainsi le risque de défaut.",
-            explanation: "Le repo est sécurisé par des titres, ce qui réduit le risque de défaut par rapport à un prêt non garanti."
+            "answer": "L'investisseur récupère 85% de son capital",
+            "explanation": "Avec une protection à 10%, une chute de 15% entraîne une perte de 5% (15%-10%), donc restitution de 85% du capital."
         },
         {
-            question: "Quel est l'objectif d'un repo ouvert (open repo) ?",
-            options: [
-                "Il a une durée fixe et ne peut pas être prolongé.",
-                "Il n'a pas de date d'échéance fixe et peut être prolongé indéfiniment.",
-                "Il est utilisé uniquement pour les opérations de banques centrales.",
-                "Il est sans collatéral."
+            "question": "Quelle est la caractéristique principale d'un swap dans un produit structuré ?",
+            "options": [
+                "C'est un emprunt obligataire",
+                "C'est un contrat d'échange de flux financiers entre parties",
+                "C'est une action privilégiée",
+                "C'est une garantie de capital"
             ],
-            answer: "Il n'a pas de date d'échéance fixe et peut être prolongé indéfiniment.",
-            explanation: "Un repo ouvert permet aux parties de reconduire l'accord tant qu'elles le souhaitent."
-        },
-
-        {
-            question: "Un repo de 5 millions d'euros est conclu pour 14 jours avec un taux repo de 1,5 %. Quel est le montant total à rembourser ?",
-            options: [
-                "5 000 000 €",
-                "5 029 166,67 €",
-                "5 100 000 €",
-                "5 150 000 €"
-            ],
-            answer: "5 029 166,67 €",
-            explanation: "Montant total = 5 000 000 × (1 + 0,015 × 14/360) = 5 029 166,67 €."
+            "answer": "C'est un contrat d'échange de flux financiers entre parties",
+            "explanation": "Un swap est un contrat permettant d'échanger différentes classes d'actifs (taux, devises) pour se couvrir contre les aléas de marché."
         },
         {
-            question: "Si un repo de 15 millions d'euros est conclu pour 60 jours avec un taux repo de 1,8 %, quel est le montant total à rembourser à l'échéance ?",
-            options: [
-                "15 045 000,00 €",
-                "15 150 000,00 €",
-                "15 180 000,00 €",
-                "15 270 000,00 €"
+            "question": "Pourquoi les produits structurés sont-ils considérés comme complexes ?",
+            "options": [
+                "Parce qu'ils utilisent des formules mathématiques et combinent plusieurs instruments financiers",
+                "Parce qu'ils sont réservés aux mathématiciens",
+                "Parce qu'ils ne sont pas réglementés",
+                "Parce qu'ils nécessitent un capital minimum très élevé"
             ],
-            answer: "15 045 000,00 €",
-            explanation: "Montant total = 15 000 000 × (1 + 0,018 × 60 / 360) = 15 045 000,00 €."
-        },
-
-        {
-            question: "Quelle formule permet de calculer les intérêts dans un repo ?",
-            options: [
-                "Montant emprunté × Taux repo × (Jours / 360)",
-                "Montant emprunté × (1 + Taux repo)",
-                "Montant emprunté + (Taux repo × Jours)",
-                "Montant emprunté / (1 + Taux repo)"
-            ],
-            answer: "Montant emprunté × Taux repo × (Jours / 360)",
-            explanation: "Cette formule calcule les intérêts en fonction du montant emprunté, du taux repo et de la durée."
+            "answer": "Parce qu'ils utilisent des formules mathématiques et combinent plusieurs instruments financiers",
+            "explanation": "Leur complexité vient des formules mathématiques et algorithmes utilisés, ainsi que de la combinaison de différents instruments financiers."
         },
         {
-            question: "Qu'est-ce qu'une opération de repo (repurchase agreement) ?",
-            options: [
-                "Une vente définitive d'obligations",
-                "Une opération de financement court-terme avec engagement de rachat",
-                "Un prêt sans garantie",
-                "Une transaction d'actions sur le marché secondaire"
+            "question": "Quelle est la première étape pour créer un produit structuré selon les exemples du document ?",
+            "options": [
+                "Choisir un sous-jacent",
+                "Déterminer la durée",
+                "Fixer les dates de constatation",
+                "Calculer les frais de gestion"
             ],
-            answer: "Une opération de financement court-terme avec engagement de rachat",
-            explanation: "Le repo est une opération de financement à court terme où les titres sont vendus avec engagement de rachat."
+            "answer": "Choisir un sous-jacent",
+            "explanation": "La création commence par le choix d'un sous-jacent (action, indice) dont dépendra la performance du produit."
         },
         {
-            question: "Que représente le repo rate dans une transaction de repo ?",
-            options: [
-                "Le rendement du bond sous-jacent",
-                "Le taux d'intérêt appliqué au prêt garanti",
-                "La différence entre le prix sale et le prix propre",
-                "Le taux d'inflation du marché"
+            "question": "Quelle est la particularité d'un coupon conditionnel dans un produit autocallable ?",
+            "options": [
+                "Il est versé uniquement si le sous-jacent dépasse un certain niveau à une date de constatation",
+                "Il est versé mensuellement quel que soit le marché",
+                "Il est calculé sur la performance de l'émetteur",
+                "Il est garanti par l'État"
             ],
-            answer: "Le taux d'intérêt appliqué au prêt garanti",
-            explanation: "Le repo rate est le taux d'intérêt appliqué dans une transaction repo."
+            "answer": "Il est versé uniquement si le sous-jacent dépasse un certain niveau à une date de constatation",
+            "explanation": "Dans un autocallable, le coupon conditionnel est versé seulement si le sous-jacent atteint un certain niveau à une date prédéfinie."
         },
         {
-            question: "Quelle est la formule correcte pour calculer le Term Money ?",
-            options: [
-                "Nominal × (Settlement Price / 100)",
-                "Nominal × (Market Price / 100)",
-                "Nominal × (Clean Price / 100)",
-                "Nominal × (Repo Rate / 100)"
+            "question": "Quel pourcentage du capital est garanti dans un produit à capital protégé à 90% ?",
+            "options": [
+                "100%",
+                "90%",
+                "50%",
+                "Aucun pourcentage n'est garanti"
             ],
-            answer: "Nominal × (Settlement Price / 100)",
-            explanation: "Le Term Money est calculé à partir du prix de règlement et du nominal du titre."
+            "answer": "90%",
+            "explanation": "Un produit à capital protégé à 90% garantit que l'investisseur récupérera au moins 90% de son capital à l'échéance."
         },
         {
-            question: "Comment calcule-t-on les intérêts du repo (repo interest) ?",
-            options: [
-                "Term Money × (Repo Rate / 100) × (Days / 365)",
-                "Term Money × (Repo Rate / 100) × (Days / 360)",
-                "Settlement Price × Face Value × (Repo Rate / 100) × (Days / 360)",
-                "Face Value × (Repo Rate / 100) × (Days / 360)"
+            "question": "Que conseille l'AMF concernant les produits structurés ?",
+            "options": [
+                "D'acheter sans lire les documents",
+                "De ne pas acheter de produits dont on ne comprend pas le fonctionnement",
+                "De concentrer ses investissements sur un seul produit",
+                "D'ignorer les frais de gestion"
             ],
-            answer: "Term Money × (Repo Rate / 100) × (Days / 360)",
-            explanation: "Les intérêts du repo sont calculés en fonction du Term Money, du repo rate et de la durée du repo en jours."
+            "answer": "De ne pas acheter de produits dont on ne comprend pas le fonctionnement",
+            "explanation": "L'AMF (Autorité des Marchés Financiers) déconseille d'acheter un placement dont on ne comprend pas la logique de fonctionnement."
         },
         {
-            question: "Quelle formule est utilisée pour calculer le Wired Amount ?",
-            options: [
-                "Term Money + Repo Interest",
-                "Term Money - Repo Interest",
-                "Settlement Price × Nominal",
-                "Repo Interest × (360 / Days)"
+            "question": "Quelle est la principale raison de la complexité des produits structurés ?",
+            "options": [
+                "Leur fiscalité complexe",
+                "La combinaison de plusieurs instruments financiers et formules mathématiques",
+                "Leur durée de vie très longue",
+                "Leur caractère spéculatif"
             ],
-            answer: "Term Money + Repo Interest",
-            explanation: "Le Wired Amount est la somme du Term Money et des intérêts du repo."
+            "answer": "La combinaison de plusieurs instruments financiers et formules mathématiques",
+            "explanation": "La complexité vient de la combinaison d'instruments (obligations, swaps, options) et de formules mathématiques définissant le rendement."
         },
         {
-            question: "Si le Face Amount est de 50M EUR, le Settlement Price est de 102.50, et l'Accrued Interest au settlement est de 1.25, quel est le Term Money ?",
-            options: [
-                "50,000,000 EUR",
-                "51,250,000 EUR",
-                "51,875,000 EUR",
-                "52,000,000 EUR"
+            "question": "Quel est l'avantage des produits structurés par rapport aux produits traditionnels ?",
+            "options": [
+                "Ils offrent des scénarios de performance et risque prédéfinis",
+                "Ils sont toujours plus performants",
+                "Ils ne comportent aucun risque",
+                "Ils sont plus simples à comprendre"
             ],
-            answer: "51,875,000 EUR",
-            explanation: "Le Term Money est calculé avec la formule : (50,000,000 × 102.5 / 100) + (50,000,000 × 1.25 / 100) = 51,875,000 EUR."
+            "answer": "Ils offrent des scénarios de performance et risque prédéfinis",
+            "explanation": "L'avantage principal est la possibilité d'avoir des scénarios de performance et de risque définis à l'avance, adaptés aux objectifs de l'investisseur."
         },
         {
-            question: "Un trader fait un repo sur 40 jours avec un Term Money de 75,000,000 EUR et un Repo Rate de 4.75%. Quel est le Repo Interest ?",
-            options: [
-                "375,000 EUR",
-                "395,833 EUR",
-                "400,000 EUR",
-                "412,500 EUR"
+            "question": "Que se passe-t-il si un produit structuré atteint son niveau de remboursement anticipé à la 3ème année ?",
+            "options": [
+                "Il est automatiquement clôturé avec paiement du capital et des coupons accumulés",
+                "Il continue jusqu'à l'échéance initiale",
+                "Les frais de gestion sont doublés",
+                "Le sous-jacent est changé"
             ],
-            answer: "395,833 EUR",
-            explanation: "Le Repo Interest est calculé avec la formule : 75,000,000 × (4.75 / 100) × (40 / 360) = 395,833 EUR."
+            "answer": "Il est automatiquement clôturé avec paiement du capital et des coupons accumulés",
+            "explanation": "Si le niveau de remboursement anticipé est atteint, le produit se clôture et l'investisseur récupère son capital plus les coupons."
+        },
+        {
+            "question": "Quelle est la différence entre un produit structuré et une obligation classique ?",
+            "options": [
+                "L'obligation classique a toujours un rendement plus élevé",
+                "Le produit structuré combine plusieurs instruments avec une performance liée à un sous-jacent",
+                "Il n'y a pas de différence",
+                "Les obligations classiques sont plus risquées"
+            ],
+            "answer": "Le produit structuré combine plusieurs instruments avec une performance liée à un sous-jacent",
+            "explanation": "Contrairement à une obligation classique, un produit structuré combine plusieurs instruments et sa performance dépend d'un sous-jacent."
+        },
+        {
+            "question": "Pourquoi les produits structurés sont-ils adaptés aux objectifs à moyen/long terme ?",
+            "options": [
+                "Parce qu'ils sont conçus pour des durées de 2 à 10 ans",
+                "Parce qu'ils offrent des rendements garantis très élevés",
+                "Parce qu'ils peuvent être revendus sans pénalité à tout moment",
+                "Parce qu'ils ne comportent aucun risque"
+            ],
+            "answer": "Parce qu'ils sont conçus pour des durées de 2 à 10 ans",
+            "explanation": "Les produits structurés sont conçus pour des horizons de placement à moyen/long terme (typiquement 2 à 10 ans)."
+        },
+        {
+            "question": "Quel est le principal élément à vérifier avant d'investir dans un produit structuré ?",
+            "options": [
+                "La couleur du document de souscription",
+                "La solidité financière de l'émetteur",
+                "Le nom du produit",
+                "La devise de libellé"
+            ],
+            "answer": "La solidité financière de l'émetteur",
+            "explanation": "La solidité de l'émetteur (banque ou assureur) est cruciale en raison du risque de défaut."
+        },
+        {
+            "question": "Que signifie 'capital garanti sous réserve de survie de l'émetteur' ?",
+            "options": [
+                "Que la garantie est valable seulement si l'émetteur ne fait pas faillite",
+                "Que le capital est garanti par l'État",
+                "Que la garantie est valable 20 ans",
+                "Que le capital est garanti à 200%"
+            ],
+            "answer": "Que la garantie est valable seulement si l'émetteur ne fait pas faillite",
+            "explanation": "Cette mention signifie que la garantie du capital dépend de la solvabilité de l'émetteur jusqu'à l'échéance."
+        },
+        {
+            "question": "Quelle est la bonne attitude face aux produits structurés selon le document ?",
+            "options": [
+                "Investir sans se poser de questions",
+                "Comprendre le produit et diversifier ses investissements",
+                "Mettre tout son capital dans un seul produit",
+                "Ignorer les documents d'information"
+            ],
+            "answer": "Comprendre le produit et diversifier ses investissements",
+            "explanation": "Le document recommande de bien comprendre le produit et de ne pas mettre tous ses œufs dans le même panier."
         }
     ],
     avance: [
         {
-            question: "Un trader doit rembourser un Wired Amount de 120,500,000 EUR après un repo de 60 jours, avec un Repo Interest de 500,000 EUR. Quel était le Term Money ?",
-            options: [
-                "119,000,000 EUR",
-                "120,000,000 EUR",
-                "120,250,000 EUR",
-                "120,500,000 EUR"
+            "question": "Quelle est la principale raison pour laquelle les produits structurés ne sont pas cotés en bourse ?",
+            "options": [
+                "Parce qu'ils sont trop risqués pour le marché public",
+                "Parce qu'ils sont émis sur mesure par les banques et compagnies d'assurance",
+                "Parce que la réglementation l'interdit",
+                "Parce qu'ils ont une durée de vie trop courte"
             ],
-            answer: "120,000,000 EUR",
-            explanation: "Le Term Money est calculé comme suit : 120,500,000 - 500,000 = 120,000,000 EUR."
+            "answer": "Parce qu'ils sont émis sur mesure par les banques et compagnies d'assurance",
+            "explanation": "Les produits structurés sont des instruments financiers non côtés car ils sont créés sur mesure par les émetteurs (banques/assureurs) pour répondre à des besoins spécifiques."
         },
         {
-            question: "Quel est l’objectif du ratio LCR ?",
-            options: [
-                "Garantir un financement stable à long terme.",
-                "Assurer que les banques disposent de suffisamment d’actifs liquides pour couvrir les sorties nettes de trésorerie sur 30 jours.",
-                "Réduire les besoins en collatéral dans les opérations de repo.",
-                "Optimiser le rendement du portefeuille obligataire."
+            "question": "Que se passe-t-il si un produit structuré atteint sa date d'échéance sans avoir déclenché de remboursement anticipé ?",
+            "options": [
+                "Il est automatiquement reconduit pour la même durée",
+                "L'investisseur récupère son capital selon les conditions initiales (garanti ou non)",
+                "Le produit est converti en actions de l'émetteur",
+                "L'investisseur perd tout son capital"
             ],
-            answer: "Assurer que les banques disposent de suffisamment d’actifs liquides pour couvrir les sorties nettes de trésorerie sur 30 jours.",
-            explanation: "Le LCR garantit que les banques maintiennent des actifs liquides pour gérer leurs besoins de trésorerie."
+            "answer": "L'investisseur récupère son capital selon les conditions initiales (garanti ou non)",
+            "explanation": "À l'échéance, le capital est restitué selon les termes du contrat : garanti totalement, partiellement, ou avec une perte si la barrière de protection est franchie."
         },
         {
-            question: "Si une banque a un LCR inférieur à 100%, que peut-elle faire pour l’améliorer ?",
-            options: [
-                "Réduire le volume de ses prêts.",
-                "Convertir des actifs illiquides en actifs de haute qualité liquides (HQLA).",
-                "Augmenter son exposition au marché des actions.",
-                "Accroître ses dettes court terme."
+            "question": "Pourquoi les produits structurés incluent-ils souvent des swaps ?",
+            "options": [
+                "Pour éviter toute fiscalité",
+                "Pour échanger des flux financiers et couvrir des risques de marché",
+                "Pour garantir un rendement fixe",
+                "Pour réduire les frais de gestion"
             ],
-            answer: "Convertir des actifs illiquides en actifs de haute qualité liquides (HQLA).",
-            explanation: "Les banques peuvent améliorer leur LCR en augmentant leurs actifs liquides de haute qualité."
+            "answer": "Pour échanger des flux financiers et couvrir des risques de marché",
+            "explanation": "Les swaps permettent aux émetteurs d'échanger des classes d'actifs (taux, devises) pour se couvrir contre les aléas de marché et structurer le produit."
         },
         {
-            question: "Quelle est la différence principale entre LCR et NSFR ?",
-            options: [
-                "LCR est un ratio de court terme et NSFR un ratio de long terme.",
-                "LCR est basé sur les actifs, NSFR sur les passifs.",
-                "LCR est calculé sur 90 jours tandis que NSFR est sur 1 an.",
-                "Il n’y a aucune différence."
+            "question": "Quel est l'inconvénient d'un produit à capital garanti par rapport à un produit à capital protégé ?",
+            "options": [
+                "Le rendement est généralement plus faible",
+                "Le capital n'est jamais garanti",
+                "La durée est plus courte",
+                "Il ne peut pas être détenu en assurance vie"
             ],
-            answer: "LCR est un ratio de court terme et NSFR un ratio de long terme.",
-            explanation: "Le LCR se concentre sur la liquidité à court terme (30 jours), tandis que le NSFR vise à garantir un financement stable à long terme."
+            "answer": "Le rendement est généralement plus faible",
+            "explanation": "La garantie intégrale du capital se fait souvent au détriment du rendement, qui est plus limité que pour les produits à capital protégé."
         },
         {
-            question: "Dans une opération de repo tripartite, qui gère le collatéral ?",
-            options: [
-                "L’acheteur.",
-                "L’agent tripartite (ex: LCH, Eurex).",
-                "Le prêteur.",
-                "La banque centrale."
+            "question": "Quelle est la particularité d'un produit structuré 'à effet mémoire' ?",
+            "options": [
+                "Il mémorise la meilleure performance atteinte pendant sa durée",
+                "Il ne peut pas être vendu avant l'échéance",
+                "Il offre un rendement fixe garanti",
+                "Il ignore les baisses du sous-jacent"
             ],
-            answer: "L’agent tripartite (ex: LCH, Eurex).",
-            explanation: "L’agent tripartite gère le collatéral pour les deux parties, réduisant les risques opérationnels."
+            "answer": "Il mémorise la meilleure performance atteinte pendant sa durée",
+            "explanation": "Les produits 'à effet mémoire' retiennent la meilleure performance du sous-jacent sur une période pour calculer le rendement final, même si le sous-jacent baisse ensuite."
         },
         {
-            question: "Quelle est la fonction d’un haircut appliqué sur un collatéral en repo ?",
-            options: [
-                "Assurer un rendement minimum sur la transaction.",
-                "Protéger contre le risque de défaut de l’emprunteur.",
-                "Réduire les besoins en liquidité du prêteur.",
-                "Optimiser le levier financier de la transaction."
+            "question": "Pourquoi un investisseur choisirait-il un produit de participation plutôt qu'un produit à capital garanti ?",
+            "options": [
+                "Pour éviter tout risque",
+                "Pour bénéficier pleinement de la hausse du sous-jacent, quitte à subir sa baisse",
+                "Pour obtenir un rendement fixe",
+                "Pour réduire les frais de gestion"
             ],
-            answer: "Protéger contre le risque de défaut de l’emprunteur.",
-            explanation: "Le haircut réduit la valeur du collatéral pour couvrir les risques de marché et de crédit."
+            "answer": "Pour bénéficier pleinement de la hausse du sous-jacent, quitte à subir sa baisse",
+            "explanation": "Les produits de participation, investis à 100% sur un sous-jacent, conviennent aux investisseurs dynamiques prêts à assumer le risque pour un potentiel de gain non bridé."
         },
         {
-            question: "Quelle est la principale raison pour laquelle une banque effectue un repo ?",
-            options: [
-                "Acheter des titres en vue d’une prise de position long terme.",
-                "Obtenir du financement en utilisant ses titres comme collatéral.",
-                "Éviter les obligations réglementaires liées au NSFR.",
-                "Profiter d’un arbitrage fiscal."
+            "question": "Que signifie le terme 'autocall' dans un produit structuré ?",
+            "options": [
+                "Une clause de remboursement automatique si un seuil est atteint",
+                "Un appel de marge obligatoire",
+                "Un rendement indexé sur l'inflation",
+                "Une garantie de capital illimitée"
             ],
-            answer: "Obtenir du financement en utilisant ses titres comme collatéral.",
-            explanation: "Les repos permettent aux banques de lever des fonds à court terme en utilisant leurs titres comme garantie."
+            "answer": "Une clause de remboursement automatique si un seuil est atteint",
+            "explanation": "'Autocall' désigne le mécanisme de remboursement automatique du produit si le sous-jacent atteint un certain niveau à une date de constatation."
         },
         {
-            question: "Quel contrat juridique encadre le securities lending ?",
-            options: [
-                "GMRA (Global Master Repo Agreement).",
-                "OSLA / GMSLA (Global Master Securities Lending Agreement).",
-                "Basel III Framework.",
-                "Dodd-Frank Act."
+            "question": "Quel est le risque spécifique aux produits à effet de levier ?",
+            "options": [
+                "Ils amplifient les pertes comme les gains",
+                "Ils ne versent jamais de coupons",
+                "Ils sont illiquides",
+                "Ils imposent un capital minimum élevé"
             ],
-            answer: "OSLA / GMSLA (Global Master Securities Lending Agreement).",
-            explanation: "Le GMSLA est le contrat standard pour les opérations de prêt de titres."
+            "answer": "Ils amplifient les pertes comme les gains",
+            "explanation": "L'effet de levier expose l'investisseur à des pertes potentielles plus importantes, proportionnelles à l'exposition supérieure à 100%."
         },
         {
-            question: "Dans une opération de securities lending, qui est typiquement le prêteur ?",
-            options: [
-                "Un hedge fund.",
-                "Une banque d’investissement.",
-                "Un fonds de pension.",
-                "Un market maker."
+            "question": "Pourquoi les produits structurés sont-ils souvent comparés à des 'options exotiques' ?",
+            "options": [
+                "Parce qu'ils sont émis dans des pays étrangers",
+                "Parce qu'ils combinent des options avec des caractéristiques complexes (barrières, coupons conditionnels...)",
+                "Parce qu'ils ont une fiscalité particulière",
+                "Parce qu'ils sont réservés aux investisseurs avertis"
             ],
-            answer: "Un fonds de pension.",
-            explanation: "Les fonds de pension sont souvent prêteurs de titres en raison de leurs portefeuilles stables et de long terme."
+            "answer": "Parce qu'ils combinent des options avec des caractéristiques complexes (barrières, coupons conditionnels...)",
+            "explanation": "Ils intègrent des options dites 'exotiques' (barrières, remboursements anticipés) qui les rendent plus complexes que les options classiques."
         },
         {
-            question: "Un LCR structurellement élevé permet à une banque de :",
-            options: [
-                "Financer des actifs moins liquides sans impact sur le ratio.",
-                "Augmenter son levier financier sans restriction.",
-                "Pratiquer du repo avec du collatéral de moindre qualité à un coût plus faible.",
-                "Effectuer des transactions de repo sur des maturités plus longues."
+            "question": "Quelle est la différence entre un coupon fixe et un coupon conditionnel ?",
+            "options": [
+                "Le coupon fixe est versé uniquement si le sous-jacent baisse",
+                "Le coupon conditionnel dépend de la performance du sous-jacent à une date donnée",
+                "Le coupon fixe est plus élevé",
+                "Il n'y a pas de différence"
             ],
-            answer: "Financer des actifs moins liquides sans impact sur le ratio.",
-            explanation: "Un LCR élevé signifie que la banque dispose d’actifs liquides suffisants, lui permettant de financer des actifs moins liquides sans nuire à son ratio de liquidité."
+            "answer": "Le coupon conditionnel dépend de la performance du sous-jacent à une date donnée",
+            "explanation": "Un coupon conditionnel n'est versé que si le sous-jacent atteint un certain niveau, contrairement au coupon fixe qui est payé quel que soit le marché."
         },
         {
-            question: "Pourquoi une banque avec un LCR bas devra-t-elle payer un premium plus élevé sur ses opérations de repo ?",
-            options: [
-                "Parce qu’elle est perçue comme plus risquée et doit offrir un collatéral de meilleure qualité.",
-                "Parce que les banques centrales imposent des pénalités aux établissements avec un faible LCR.",
-                "Parce qu’elle ne peut pas utiliser de collatéral pour ses opérations de repo.",
-                "Parce qu’elle doit lever plus de capital sur les marchés obligataires."
+            "question": "Que se passe-t-il si un produit structuré est détenu dans un PEA et que l'investisseur clôture son PEA avant l'échéance ?",
+            "options": [
+                "Le produit est transféré automatiquement vers un compte titres",
+                "Le produit est liquidé avec une pénalité fiscale",
+                "Le produit continue jusqu'à son échéance",
+                "Le capital est garanti à 100%"
             ],
-            answer: "Parce qu’elle est perçue comme plus risquée et doit offrir un collatéral de meilleure qualité.",
-            explanation: "Une banque avec un faible LCR devra fournir du collatéral de haute qualité (HQLA) ou payer un coût de financement plus élevé, car les prêteurs perçoivent un risque plus important."
+            "answer": "Le produit est liquidé avec une pénalité fiscale",
+            "explanation": "La clôture anticipée d'un PEA entraîne la liquidation des actifs (dont les produits structurés) et une perte des avantages fiscaux."
         },
         {
-            question: "Quelle action impactera directement à la baisse le NSFR d’une banque ?",
-            options: [
-                "Une augmentation du volume de financements stables.",
-                "Une substitution de financements à court terme par des financements à long terme.",
-                "Une croissance rapide des actifs pondérés en risque financés par des dettes à court terme.",
-                "Une réduction des actifs pondérés en risque."
+            "question": "Quel est l'avantage d'un produit structuré en assurance vie par rapport à un compte titres ?",
+            "options": [
+                "Une fiscalité plus avantageuse à long terme",
+                "Un rendement garanti plus élevé",
+                "Une absence totale de frais",
+                "Une liquidité immédiate"
             ],
-            answer: "Une croissance rapide des actifs pondérés en risque financés par des dettes à court terme.",
-            explanation: "Le NSFR mesure la stabilité du financement bancaire sur un horizon d’un an. Un financement court terme accru face à des actifs illiquides dégradera ce ratio."
+            "answer": "Une fiscalité plus avantageuse à long terme",
+            "explanation": "En assurance vie, après 8 ans, les gains bénéficient d'une fiscalité avantageuse (abattement annuel et taux réduit), contrairement au compte titres."
         },
         {
-            question: "Lors d'une crise de liquidité, quelle stratégie peut permettre à une banque de respecter son LCR ?",
-            options: [
-                "Effectuer des ventes d’actifs non liquides pour lever du cash.",
-                "Augmenter son exposition aux produits dérivés.",
-                "Accroître son levier en empruntant à court terme.",
-                "Remplacer ses actifs HQLA par des titres à haut rendement."
+            "question": "Pourquoi les produits structurés sont-ils souvent critiqués ?",
+            "options": [
+                "Parce qu'ils sont trop simples à comprendre",
+                "Parce que leur complexité peut masquer des risques ou des frais élevés",
+                "Parce qu'ils offrent des rendements toujours inférieurs au marché",
+                "Parce qu'ils sont réservés aux institutions"
             ],
-            answer: "Effectuer des ventes d’actifs non liquides pour lever du cash.",
-            xplanation: "Vendre des actifs non liquides pour acquérir des actifs HQLA permet d’augmenter le numérateur du ratio LCR et de respecter les exigences réglementaires."
+            "answer": "Parce que leur complexité peut masquer des risques ou des frais élevés",
+            "explanation": "La complexité des formules et des termes peut rendre difficile l'évaluation des risques réels ou des coûts cachés pour l'investisseur non averti."
         },
         {
-            question: "Comment un haircut affecte-t-il le financement d’une transaction repo ?",
-            options: [
-                "Il diminue la valeur de financement accordée par rapport à la valeur nominale du collatéral.",
-                "Il augmente la valeur de financement du collatéral.",
-                "Il n’a d’impact que sur la qualité du collatéral et non sur le financement.",
-                "Il réduit l’exposition au risque de contrepartie pour l’emprunteur."
+            "question": "Quelle est la conséquence d'une sortie anticipée d'un produit structuré avant une date de constatation ?",
+            "options": [
+                "L'investisseur perd le droit aux coupons déjà accumulés",
+                "Le capital est garanti à 100%",
+                "Le produit est converti en actions",
+                "Les frais de gestion sont remboursés"
             ],
-            answer: "Il diminue la valeur de financement accordée par rapport à la valeur nominale du collatéral.",
-            explanation: "Un haircut réduit la valeur du financement accordé par rapport à la valeur de marché du collatéral afin de couvrir le risque de baisse de prix du titre sous-jacent."
+            "answer": "L'investisseur perd le droit aux coupons déjà accumulés",
+            "explanation": "Une sortie anticipée peut entraîner la perte des coupons non encore versés et une restitution du capital aux conditions de marché (potentiellement avec une décote)."
         },
         {
-            question: "Une contrepartie effectue un repo avec un haircut de 5% sur un nominal de 50M€. Quel montant recevra-t-elle en cash ?",
-            options: [
-                "52,500,000 €",
-                "47,500,000 €",
-                "50,000,000 €",
-                "49,000,000 €"
+            "question": "Quel type de sous-jacent est le moins volatile pour un produit à capital garanti ?",
+            "options": [
+                "Un indice large (ex : EuroStoxx 50)",
+                "Une action individuelle",
+                "Une cryptomonnaie",
+                "Une matière première"
             ],
-            answer: "47,500,000 €",
-            explanation: "Montant financé = Nominal × (1 - Haircut) = 50,000,000 × (1 - 0.05) = 47,500,000 €."
+            "answer": "Un indice large (ex : EuroStoxx 50)",
+            "explanation": "Les produits à capital garanti reposent souvent sur des sous-jacents peu volatils (indices larges) pour limiter le risque de franchissement de la barrière."
         },
         {
-            question: "Lors d’une transaction repo tripartite, quel est l’avantage principal de l’agent tripartite ?",
-            options: [
-                "Il garantit que la transaction est exécutée au meilleur prix du marché.",
-                "Il fournit une compensation en cas de défaut de l’une des parties.",
-                "Il gère et optimise la gestion du collatéral, réduisant ainsi les coûts administratifs pour les parties.",
-                "Il impose des exigences réglementaires plus strictes aux participants."
+            "question": "Que signifie 'knock-in' dans un produit structuré ?",
+            "options": [
+                "Une clause activant une option si le sous-jacent franchit un seuil",
+                "Un remboursement automatique du capital",
+                "Une pénalité en cas de sortie anticipée",
+                "Un coupon garanti"
             ],
-            answer: "Il gère et optimise la gestion du collatéral, réduisant ainsi les coûts administratifs pour les parties.",
-            explanation: "L’agent tripartite gère le collatéral et permet aux contreparties de bénéficier d’une administration simplifiée et d’une réduction des coûts opérationnels."
+            "answer": "Une clause activant une option si le sous-jacent franchit un seuil",
+            "explanation": "Une clause 'knock-in' active un mécanisme (ex : protection du capital) seulement si le sous-jacent atteint un certain niveau pendant la durée du produit."
         },
         {
-            question: "Quelle est la principale différence entre une opération de repo et un prêt de titres (securities lending) ?",
-            options: [
-                "Dans un repo, il y a un engagement de rachat du collatéral, ce qui n’est pas le cas dans un prêt de titres.",
-                "Le repo ne nécessite pas de collatéral, contrairement au lending.",
-                "Les repos sont uniquement réglementés par les banques centrales.",
-                "Un repo ne peut être exécuté qu’entre banques commerciales."
+            "question": "Pourquoi un investisseur pourrait préférer un produit à coupon conditionnel plutôt qu'un produit à coupon fixe ?",
+            "options": [
+                "Pour obtenir un rendement potentiellement plus élevé si le sous-jacent performe",
+                "Pour éviter tout risque de marché",
+                "Pour garantir un coupon mensuel",
+                "Pour réduire les frais d'entrée"
             ],
-            answer: "Dans un repo, il y a un engagement de rachat du collatéral, ce qui n’est pas le cas dans un prêt de titres.",
-            explanation: "Un repo est une vente temporaire avec rachat obligatoire, tandis qu’un prêt de titres permet à l’emprunteur de restituer un titre équivalent à la fin du contrat."
+            "answer": "Pour obtenir un rendement potentiellement plus élevé si le sous-jacent performe",
+            "explanation": "Les coupons conditionnels offrent des rendements plus élevés que les coupons fixes lorsque le sous-jacent atteint les seuils définis, en contrepartie d'un risque de non-paiement."
         },
         {
-            question: "Pourquoi un prime broker joue-t-il un rôle clé dans le securities lending ?",
-            options: [
-                "Il centralise la gestion des collatéraux et optimise le coût du financement.",
-                "Il impose des restrictions réglementaires aux hedge funds.",
-                "Il empêche les opérations de short selling.",
-                "Il garantit les transactions auprès des autorités de régulation."
+            "question": "Quelle est la particularité d'un produit 'airbag' ?",
+            "options": [
+                "Il garantit le capital même en cas de faillite de l'émetteur",
+                "Il offre une protection partielle du capital avec un effet de levier sur la performance positive",
+                "Il ne comporte aucun frais",
+                "Il est réservé aux professionnels"
             ],
-            answer: "Il centralise la gestion des collatéraux et optimise le coût du financement.",
-            explanation: "Un prime broker facilite le financement des hedge funds en leur prêtant des titres et en gérant les collatéraux de manière efficace."
+            "answer": "Il offre une protection partielle du capital avec un effet de levier sur la performance positive",
+            "explanation": "Un produit 'airbag' combine une protection partielle du capital (ex : -20%) avec une participation amplifiée à la hausse du sous-jacent (ex : 200%)."
         },
         {
-            question: "Lors d’une opération de securities lending, quel est l’intérêt d’un rebate pour le prêteur ?",
-            options: [
-                "Il représente une commission payée à l’agent de règlement.",
-                "Il constitue une rémunération versée au prêteur en échange du prêt des titres.",
-                "Il est une taxe réglementaire imposée aux transactions de lending.",
-                "Il est un paiement effectué par l’emprunteur pour couvrir le risque de défaut."
+            "question": "Que vérifie l'AMF dans les documents des produits structurés ?",
+            "options": [
+                "Que les risques sont clairement expliqués, surtout si la garantie est inférieure à 90%",
+                "Que les rendements sont garantis par l'État",
+                "Que les produits sont réservés aux investisseurs avertis",
+                "Que les frais de gestion ne dépassent pas 1%"
             ],
-            answer: "Il constitue une rémunération versée au prêteur en échange du prêt des titres.",
-            explanation: "Le rebate est une forme de rémunération que le prêteur reçoit en échange du prêt des titres, notamment lorsque le collatéral fourni est du cash."
+            "answer": "Que les risques sont clairement expliqués, surtout si la garantie est inférieure à 90%",
+            "explanation": "L'AMF impose une transparence sur les risques, particulièrement lorsque la garantie du capital est inférieure à 90%, pour protéger les investisseurs."
         },
         {
-            question: "Comment un investisseur peut-il arbitrer entre le repo et le securities lending pour optimiser son rendement ?",
-            options: [
-                "En choisissant le lending lorsqu’il veut récupérer des titres et le repo lorsqu’il a besoin de cash.",
-                "En combinant les deux pour maximiser son levier et optimiser son portefeuille d'actifs.",
-                "En n’utilisant que le repo, car il est plus liquide que le lending.",
-                "En évitant les opérations de repo, car elles sont toujours plus coûteuses."
+            "question": "Quel est l'intérêt d'un produit structuré pour un investisseur en phase de retraite ?",
+            "options": [
+                "La possibilité de protéger son capital tout en participant à une hausse limitée des marchés",
+                "Un effet de levier pour maximiser les gains",
+                "Une liquidité immédiate",
+                "Une absence totale de risque"
             ],
-            answer: "En combinant les deux pour maximiser son levier et optimiser son portefeuille d'actifs.",
-            explanation: "Un investisseur peut utiliser le lending pour maximiser son portefeuille de titres et le repo pour obtenir du financement, combinant ainsi rendement et gestion de liquidité."
+            "answer": "La possibilité de protéger son capital tout en participant à une hausse limitée des marchés",
+            "explanation": "Les produits à capital garanti ou protégé conviennent aux retraités cherchant à limiter les risques tout en bénéficiant d'un rendement potentiel."
         }
 
     ]
