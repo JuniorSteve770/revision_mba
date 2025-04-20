@@ -114,7 +114,117 @@ const questions = {
             ],
             "answer": "Offrir un potentiel de hausse à maturité",
             "explanation": "Le Call acheté permet de capter la hausse du sous-jacent si celui-ci clôture au-dessus du prix d'exercice à maturité."
-        }
+        },
+        {
+          "question": "Comment le Delta d'un Call intégré dans un produit structuré affecte-t-il sa performance ?",
+          "options": [
+              "Un Delta élevé réduit la sensibilité à la hausse du sous-jacent",
+              "Un Delta proche de 1 maximise la participation à la hausse",
+              "Un Delta faible augmente l'effet de levier",
+              "Le Delta n'a aucun impact sur les produits structurés"
+          ],
+          "answer": "Un Delta proche de 1 maximise la participation à la hausse",
+          "explanation": "Le Delta mesure la sensibilité du prix du Call à la variation du sous-jacent. Un Delta de 1 signifie que le produit réplique parfaitement la hausse (participation 100%). Un Delta de 0.5 impliquerait une participation réduite de 50%."
+      },
+      {
+          "question": "Quel est l'impact d'une hausse de la volatilité implicite sur un produit avec Put vendu ?",
+          "options": [
+              "La prime perçue augmente, permettant d'acheter plus de Calls",
+              "Le coût du Call acheté diminue",
+              "La barrière du Put Down & In se déplace",
+              "Le zéro-coupon devient plus cher"
+          ],
+          "answer": "La prime perçue augmente, permettant d'acheter plus de Calls",
+          "explanation": "Une volatilité plus élevée augmente la valeur des options vendues (Put). La prime perçue peut financer une participation accrue au Call, mais accroît aussi le risque de déclenchement de la barrière."
+      },
+      {
+          "question": "Si les taux d'intérêt montent de 2% à 4%, comment évolue la part allouée au zéro-coupon dans un capital protégé ?",
+          "options": [
+              "Elle diminue (moins de capital nécessaire pour garantir 100%)",
+              "Elle augmente (le coût de la garantie s'alourdit)",
+              "Elle reste stable (immunisée par le Delta)",
+              "Seul le strike du Call est affecté"
+          ],
+          "answer": "Elle diminue (moins de capital nécessaire pour garantir 100%)",
+          "explanation": "100/(1+4%)^3 ≈ 88.90% vs 92.38% à 2%. L'actualisation est plus forte, libérant 3.48% supplémentaire pour la composante performance."
+      },
+      {
+          "question": "IMPACT DES Greek: Pourquoi un Call à faible Delta réduit-il l'attractivité d'un produit de participation ?",
+          "options": [
+              "Il limite la performance en cas de hausse modérée",
+              "Il augmente le risque de barrière",
+              "Il rend le zéro-coupon plus cher",
+              "Il annule l'effet des taux"
+          ],
+          "answer": "Il limite la performance en cas de hausse modérée",
+          "explanation": "Un Delta faible (ex: 0.3) signifie que le produit ne capte que 30% de la hausse du sous-jacent. Typique pour les Calls loin dans la monnaie (high strike)."
+      },
+      {
+          "question": "Comment une baisse de la volatilité affecte-t-elle un Autocall avec Put vendu ?",
+          "options": [
+              "Réduit la probabilité de déclenchement anticipé",
+              "Augmente la prime du Put, améliorant les coupons",
+              "Diminue la valeur des options vendues, réduisant les revenus",
+              "Ne modifie que le Delta sans impact sur la structure"
+          ],
+          "answer": "Diminue la valeur des options vendues, réduisant les revenus",
+          "explanation": "Moins de volatilité = options moins chères. La prime perçue sur le Put vendu baisse, ce qui peut réduire les coupons ou la participation au Call."
+      },
+      {
+          "question": "Quel mécanisme explique que des taux bas favorisent les produits à capital garanti ?",
+          "options": [
+              "Le coût du Put augmente, protégeant mieux l'investisseur",
+              "Le zéro-coupon capte une plus grande part du nominal",
+              "Le Call devient gratuit grâce au 'moneyness'",
+              "La duration du produit diminue"
+          ],
+          "answer": "Le zéro-coupon capte une plus grande part du nominal",
+          "explanation": "Avec des taux à 0%, 100% du nominal doit être investi dans le zéro-coupon pour la garantie (100/(1+0%)^n = 100%), laissant 0% pour la performance. Des taux élevés libèrent du budget."
+      },
+      {
+          "question": "Si le Delta d'un Call passe de 0.7 à 0.5 durant la vie du produit, cela indique :",
+          "options": [
+              "Le sous-jacent s'est rapproché du strike",
+              "Le sous-jacent s'éloigne du strike (baisse ou faible hausse)",
+              "La volatilité a chuté de 20%",
+              "Les taux ont neutralisé l'option"
+          ],
+          "answer": "Le sous-jacent s'éloigne du strike (baisse ou faible hausse)",
+          "explanation": "Un Delta qui baisse suggère que le Call devient moins sensible (hors de la monnaie). Pour un Call, Delta ↓ si le sous-jacent baisse ou stagne loin du strike."
+      },
+      {
+          "question": "Dans un environnement de volatilité croissante, quel produit structuré devient plus attractif ?",
+          "options": [
+              "Capital garanti avec Call acheté",
+              "Autocall avec Put vendu",
+              "Reverse Convertible sans barrière",
+              "Tunnel (Call + Put vendus)"
+          ],
+          "answer": "Autocall avec Put vendu",
+          "explanation": "La hausse de volatilité augmente la prime perçue sur le Put vendu, permettant des coupons plus élevés ou une barrière plus protectrice."
+      },
+      {
+          "question": "Pourquoi les taux influent-ils sur le strike des Calls dans les produits de participation ?",
+          "options": [
+              "Les taux modifient le coût du portage du sous-jacent",
+              "Le Delta est directement lié au taux sans risque",
+              "La valeur intrinsèque dépend des taux courts",
+              "Seul le Put est sensible aux taux"
+          ],
+          "answer": "Les taux modifient le coût du portage du sous-jacent",
+          "explanation": "Selon la parité Call-Put, des taux élevés rendent les Calls plus chers (car portage du sous-jacent coûteux). Cela peut pousser à utiliser des strikes plus élevés pour réduire le coût."
+      },
+      {
+          "question": "Quelle stratégie atténue l'impact d'une baisse de volatilité sur un produit à capital protégé ?",
+          "options": [
+              "Remplacer le Call par un Put acheté",
+              "Utiliser des options exotiques (ex: Asian) moins sensibles à la volatilité spot",
+              "Augmenter la barrière du Put Down & In",
+              "Convertir le zéro-coupon en obligation classique"
+          ],
+          "answer": "Utiliser des options exotiques (ex: Asian) moins sensibles à la volatilité spot",
+          "explanation": "Les options asiatiques (basées sur la moyenne) ou lookback ont une volatilité implicite plus stable que les options vanilles, réduisant la sensibilité aux fluctuations de volatilité."
+      }
     ],
         
     //  toute la partie venant de deepseek est en dessous mais la partie du haut est aussi importante 
